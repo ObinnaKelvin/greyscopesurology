@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.scss'; 
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/images/greyscopes_landscape_brand.png';
+import logo from '../../assets/images/greyscopes_landscape_brand_white.png';
 
 function Navbar() {
   const navigate = useNavigate()
@@ -30,7 +30,11 @@ function Navbar() {
           <div>Book Appointment</div>
         </Link>
       </div>
-        {/* Navbar */}
+      <div className='navbar-hamburger'>
+          <span className="hamOne"></span>
+          <span className="hamTwo"></span>
+          <span className="hamThree"></span>
+      </div>
     </div>
   )
 }
