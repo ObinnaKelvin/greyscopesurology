@@ -1,6 +1,6 @@
 import React from 'react'
 import './carousel.scss'
-import bg1 from '../../assets/images/bg8.jpg';
+import bg1 from '../../assets/images/bg9.jpg';
 // function Carousel() {
 //   return (
 //     <div>Carousel</div>
@@ -14,6 +14,12 @@ export const HeroCarousel = () => {
         <div className='heroCarousel-container'>
             {/* <img src={bg1} alt="carousel background" /> */}
             {/* Hero Carousel */}
+            <div className="dots">
+                <div className="dot active"></div>
+                <div className="dot"></div>
+                <div className="dot"></div>
+            </div>
+            <img src={bg1} alt="carousel background" />
         </div>
     )
 }
