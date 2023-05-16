@@ -25,7 +25,11 @@ function Home() {
         <HeroCarousel />
 
         <div className='services-container'>
-                <span className="services-header">Top Services</span>
+                <span className="services-header">
+                    Professional Services
+                    <hr className='line'/>
+                </span>
+                {/* <hr className='line'/> */}
                 <div className="services-wrapper">
                     <div className="services-item">
                         <div className="image">

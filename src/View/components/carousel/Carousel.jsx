@@ -14,6 +14,7 @@ export const HeroCarousel = () => {
         <div className='heroCarousel-container'>
             {/* <img src={bg1} alt="carousel background" /> */}
             {/* Hero Carousel */}
+            <div className="overlay"></div>
             <div className="dots">
                 <div className="dot active"></div>
                 <div className="dot"></div>
