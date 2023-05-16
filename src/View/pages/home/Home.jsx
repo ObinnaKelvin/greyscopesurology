@@ -16,6 +16,8 @@ import vasectomy from "../../assets/images/vasectomy.gif"
 import people from "../../assets/images/group.png"
 import doctor from "../../assets/images/doctor.png"
 import medal from "../../assets/images/medal.png"
+import machine from "../../assets/images/ventilation.png"
+import stethoscope from "../../assets/images/stethoscope.png"
 import CountUp from 'react-countup';
 // import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,15 +38,15 @@ function Home() {
                 <div className="stat-icon-holder">
                     <img src={people} className="stat-icon" alt='happy clients'/>
                 </div>
-                <div className="stat-figure"><CountUp end={200} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-figure"><CountUp end={500} duration={2} enableScrollSpy={true}/>+</div>
                 <div className="stat-description">Happy Patients</div>
             </div>
             <div className="stats-item">
                 <div className="stat-icon-holder">
                     <img src={doctor} className="stat-icon doctor" alt='Professional Doctors'/>
                 </div>
-                <div className="stat-figure doctor"><CountUp end={13} duration={2} enableScrollSpy={true}/></div>
-                <div className="stat-description">Professional Doctors</div>
+                <div className="stat-figure doctor"><CountUp end={1500} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-description">Consultations</div>
             </div>
             <div className="stats-item">
                 <div className="stat-icon-holder">
@@ -164,6 +166,48 @@ function Home() {
                     
 
         </div>
+
+        {/* <div className="whyUs-container">
+
+                <div className="whyUs-wrapper">
+                    <span className="whyUs-header">
+                        Why Choose Greyscopes Urology?
+                        <hr className='line'/>
+                    </span>
+                    <div className="whyUs-items">
+                        <div className="whyUs-item active">
+                            <div className="whyUs-item-header">
+                                <img src={stethoscope} className="whyUs-icon" alt='Professionals'/>
+                                <p><strong>Qualified Specialists</strong></p>
+                            </div>
+                            <div className="whyUs-description">
+                                <p>Our team of more than 20 professionals have trained in the UK and abroad, creating a highly skilled,
+                                    friendly and multi-lingual team to best serve our patient's needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="whyUs-item">
+                            <div className="whyUs-item-header">
+                                <img src={machine} className="whyUs-icon" alt='High-end equipments'/>
+                                <p>Modern Equipments</p>
+                            </div>
+                            <div className="whyUs-description">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div className="whyUs-item">
+                            <div className="whyUs-item-header">
+                                <img src={machine} className="whyUs-icon" alt='High-end equipments'/>
+                                <p>Modern Equipments</p>
+                            </div>
+                            <div className="whyUs-description">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div> */}
     </div>
   )
 }
