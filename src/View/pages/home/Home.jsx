@@ -13,6 +13,12 @@ import laser from "../../assets/images/laser.gif"
 import tube from "../../assets/images/tube.gif"
 import thermometer from "../../assets/images/thermometer.gif"
 import vasectomy from "../../assets/images/vasectomy.gif"
+import people from "../../assets/images/group.png"
+import doctor from "../../assets/images/doctor.png"
+import medal from "../../assets/images/medal.png"
+import CountUp from 'react-countup';
+// import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './home.scss';
 
@@ -24,12 +30,38 @@ function Home() {
             {/* Home */}
         <HeroCarousel />
 
+        
+        <div className="stats-wrapper">
+            <div className="stats-item">
+                <div className="stat-icon-holder">
+                    <img src={people} className="stat-icon" alt='happy clients'/>
+                </div>
+                <div className="stat-figure"><CountUp end={200} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-description">Happy Patients</div>
+            </div>
+            <div className="stats-item">
+                <div className="stat-icon-holder">
+                    <img src={doctor} className="stat-icon doctor" alt='Professional Doctors'/>
+                </div>
+                <div className="stat-figure doctor"><CountUp end={13} duration={2} enableScrollSpy={true}/></div>
+                <div className="stat-description">Professional Doctors</div>
+            </div>
+            <div className="stats-item">
+                <div className="stat-icon-holder">
+                    <img src={medal} className="stat-icon experience" alt='Years of Experience'/>
+                </div>
+                <div className="stat-figure experience"><CountUp end={20} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-description">Years of Experience</div>
+            </div>
+        </div>
+
+
         <div className='services-container'>
+                {/* <hr className='line'/> */}
                 <span className="services-header">
                     Professional Services
                     <hr className='line'/>
                 </span>
-                {/* <hr className='line'/> */}
                 <div className="services-wrapper">
                     <div className="services-item">
                         <div className="image">
@@ -128,35 +160,9 @@ function Home() {
                             <p>Laparoscopy</p>
                         </div>
                     </div>
-                    {/* <div className="services-item">
-                        <div className="image">
-                            <img src={kidney} class="" alt="Kidney"/>
-                        </div>
-                        <div className="description">
-                            <h2>Nephrology</h2>
-                            <p>Haemodialysis</p>
-                            <p>Continuous Renal Replacement Therapy</p>
-                            <p>Drug Overdose Clearance</p>
-                            <p>Ultrasound Guided Renal Biopsy</p>
-                            <p>Renal Transplantation</p>
-                        </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="image">
-                            <img src={microb} class="" alt="Kidney"/>
-                        </div>
-                        <div className="description">
-                            <h2>Urology</h2>
-                            <p>Ultra sound Scan Guided Prostate Biopsy</p>
-                            <p>Endoscopic Prostate Surgeries</p>
-                            <p>Laser Stone Surgeries</p>
-                            <p>Prostate Cancer Treatment</p>
-                            <p>Pediatric Urology(Undescended Testis, Hypospadias)</p>
-                            <p>Male Infertility Treatment</p>
-                            <p>Laparoscopy</p>
-                        </div>
-                    </div> */}
                 </div>
+                    
+
         </div>
     </div>
   )
