@@ -18,6 +18,7 @@ import doctor from "../../assets/images/doctor.png"
 import medal from "../../assets/images/medal.png"
 import machine from "../../assets/images/ventilation.png"
 import stethoscope from "../../assets/images/stethoscope.png"
+import ambulance from "../../assets/images/ambulance.png"
 import CountUp from 'react-countup';
 // import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -167,7 +168,7 @@ function Home() {
 
         </div>
 
-        {/* <div className="whyUs-container">
+        <div className="whyUs-container">
 
                 <div className="whyUs-wrapper">
                     <span className="whyUs-header">
@@ -177,7 +178,7 @@ function Home() {
                     <div className="whyUs-items">
                         <div className="whyUs-item active">
                             <div className="whyUs-item-header">
-                                <img src={stethoscope} className="whyUs-icon" alt='Professionals'/>
+                                <img src={stethoscope} className="whyUs-icon" alt='Qualified Specialists'/>
                                 <p><strong>Qualified Specialists</strong></p>
                             </div>
                             <div className="whyUs-description">
@@ -192,22 +193,22 @@ function Home() {
                                 <p>Modern Equipments</p>
                             </div>
                             <div className="whyUs-description">
-                                <p></p>
+                                <p>We boast a pleathora of first-class medical equipment for top-notch diagnostics and quality care. </p>
                             </div>
                         </div>
                         <div className="whyUs-item">
                             <div className="whyUs-item-header">
-                                <img src={machine} className="whyUs-icon" alt='High-end equipments'/>
-                                <p>Modern Equipments</p>
+                                <img src={ambulance} className="whyUs-icon" alt='Emergency Diagnostics'/>
+                                <p>Emergency Diagnostics</p>
                             </div>
                             <div className="whyUs-description">
-                                <p></p>
+                                <p>Our emergency diagnostics service help you get the most accurate diagnosis in a minimal time.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-        </div> */}
+        </div>
     </div>
   )
 }
