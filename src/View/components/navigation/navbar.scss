@@ -2,7 +2,13 @@
 
     .link {
         text-decoration: none;
-        color: white;
+        // color: white;
+        color: #9e9e9e;
+    }
+    .link.active {
+        text-decoration: none;
+        // color: white;
+        color: #c62828;
     }
 
     // border: 1px solid blue;
@@ -13,6 +19,7 @@
     justify-content: space-between;
     font-size: 13px;
     z-index: 1;
+    margin-top: 10px;
     // opacity: 0.1;
 
     .navBar-header-logo {
@@ -54,7 +61,7 @@
         //z-index: 7;
 
         .hamOne {
-            background-color: #fff;
+            background-color: #c62828;
             height: 2px;
             margin-bottom: 7px;
             border-radius: 50px;
@@ -62,14 +69,14 @@
         }
         
         .hamTwo {
-            background-color: #fff;
+            background-color: #c62828;
             height: 2px;
             margin-bottom: 7px;
             border-radius: 50px;
         }
         
         .hamThree {
-            background-color: #fff;
+            background-color: #c62828;
             height: 2px;
             border-radius: 50px;
             width: 70%;

@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.scss'; 
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/images/greyscopes_landscape_brand_white.png';
+import logo from '../../assets/images/greyscopes_landscape_brand.png';
 
 function Navbar() {
   const navigate = useNavigate()
@@ -14,7 +14,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="navBar-header-right">
-        <Link to={'/'}  className='link'>
+        <Link to={'/'}  className='link active'>
           <div>Home</div>
         </Link>
         <Link to={'/about'} className='link'>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navigation/Navbar'
-import { HeroCarousel } from '../../components/carousel/Carousel'
+import { HeroCarousel, HeroSwiperCarousel } from '../../components/carousel/Carousel'
 import kidney from "../../assets/images/kidneys.gif"
 import microb from "../../assets/images/microorganism.gif"
 import fertilization from "../../assets/images/fertilization.gif"
@@ -31,33 +31,8 @@ function Home() {
     <div className='home-container'>
         <Navbar />
             {/* Home */}
-        <HeroCarousel />
-
-        
-        <div className="stats-wrapper">
-            <div className="stats-item">
-                <div className="stat-icon-holder">
-                    <img src={people} className="stat-icon" alt='happy clients'/>
-                </div>
-                <div className="stat-figure"><CountUp end={500} duration={2} enableScrollSpy={true}/>+</div>
-                <div className="stat-description">Happy Patients</div>
-            </div>
-            <div className="stats-item">
-                <div className="stat-icon-holder">
-                    <img src={doctor} className="stat-icon doctor" alt='Professional Doctors'/>
-                </div>
-                <div className="stat-figure doctor"><CountUp end={1500} duration={2} enableScrollSpy={true}/>+</div>
-                <div className="stat-description">Consultations</div>
-            </div>
-            <div className="stats-item">
-                <div className="stat-icon-holder">
-                    <img src={medal} className="stat-icon experience" alt='Years of Experience'/>
-                </div>
-                <div className="stat-figure experience"><CountUp end={20} duration={2} enableScrollSpy={true}/>+</div>
-                <div className="stat-description">Years of Experience</div>
-            </div>
-        </div>
-
+        {/* <HeroCarousel /> */}
+        <HeroSwiperCarousel />
 
         <div className='services-container'>
                 {/* <hr className='line'/> */}
@@ -166,6 +141,31 @@ function Home() {
                 </div>
                     
 
+        </div>
+
+        
+        <div className="stats-wrapper">
+            <div className="stats-item">
+                <div className="stat-icon-holder">
+                    <img src={people} className="stat-icon" alt='happy clients'/>
+                </div>
+                <div className="stat-figure"><CountUp end={500} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-description">Happy Patients</div>
+            </div>
+            <div className="stats-item">
+                <div className="stat-icon-holder">
+                    <img src={doctor} className="stat-icon doctor" alt='Professional Doctors'/>
+                </div>
+                <div className="stat-figure doctor"><CountUp end={1500} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-description">Consultations</div>
+            </div>
+            <div className="stats-item">
+                <div className="stat-icon-holder">
+                    <img src={medal} className="stat-icon experience" alt='Years of Experience'/>
+                </div>
+                <div className="stat-figure experience"><CountUp end={20} duration={2} enableScrollSpy={true}/>+</div>
+                <div className="stat-description">Years of Experience</div>
+            </div>
         </div>
 
         <div className="whyUs-container">
