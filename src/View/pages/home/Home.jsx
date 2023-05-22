@@ -19,6 +19,7 @@ import medal from "../../assets/images/medal.png"
 import machine from "../../assets/images/ventilation.png"
 import stethoscope from "../../assets/images/stethoscope.png"
 import ambulance from "../../assets/images/ambulance.png"
+import clock from "../../assets/images/clock.png"
 import CountUp from 'react-countup';
 // import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -203,6 +204,15 @@ function Home() {
                             </div>
                             <div className="whyUs-description">
                                 <p>Our emergency diagnostics service help you get the most accurate diagnosis in a minimal time.</p>
+                            </div>
+                        </div>
+                        <div className="whyUs-item">
+                            <div className="whyUs-item-header">
+                                <img src={clock} className="whyUs-icon" alt='Emergency Diagnostics'/>
+                                <p>Quick Response</p>
+                            </div>
+                            <div className="whyUs-description">
+                                <p>Because our patients are our priority, we ensure that they experience zero to minimal delay.</p>
                             </div>
                         </div>
                     </div>
