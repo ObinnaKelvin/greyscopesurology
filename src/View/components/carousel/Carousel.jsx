@@ -57,12 +57,43 @@ export const HeroSwiperCarousel = () => {
                 <SwiperSlide>
                     <img src={bg11} alt='beegee 11'/>
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <img src={bg9} alt='beegee 9'/>
-                </SwiperSlide>
+                </SwiperSlide> */}
 
             </Swiper>
 
         </>
     )
+}
+
+
+export const PeopleSayCarousel = () => {
+    SwiperCore.use([Autoplay])
+    return (
+        <>
+            <Swiper
+             spaceBetween={30}
+             effect={"fade"}
+            //  navigation={true}
+             navigation={false}
+             pagination={{clickakble: true}}
+             modules={[EffectFade, Navigation, Pagination]}
+             className='peopleSay-wrapper'
+             autoplay={{delay: 5000}}
+            >
+                {/* <div className="overlay"></div> */}
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>"</div>
+                        <div className='peopleSay-wrapper'>
+
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
+        </>
+    )
+
 }

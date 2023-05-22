@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navigation/Navbar'
-import { HeroCarousel, HeroSwiperCarousel } from '../../components/carousel/Carousel'
+import { HeroCarousel, HeroSwiperCarousel, PeopleSayCarousel } from '../../components/carousel/Carousel'
 import kidney from "../../assets/images/kidneys.gif"
 import microb from "../../assets/images/microorganism.gif"
 import fertilization from "../../assets/images/fertilization.gif"
@@ -218,6 +218,10 @@ function Home() {
                     </div>
                 </div>
 
+        </div>
+
+        <div className='peopleSay-container'>
+            <div className='peopleSay-darkOverlay'></div>
         </div>
     </div>
   )
