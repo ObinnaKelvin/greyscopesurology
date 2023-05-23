@@ -5,6 +5,8 @@ import bg1 from '../../assets/images/bg9.jpg';
 import bg9 from '../../assets/images/bg9.jpg';
 import bg10 from '../../assets/images/bg10.jpg';
 import bg11 from '../../assets/images/bg11.jpg';
+import quote from '../../assets/images/left-quote.png'
+import star from '../../assets/images/star.png'
 import 'swiper/swiper-bundle.css'
 import SwiperCore, {Autoplay} from 'swiper';
 
@@ -79,15 +81,34 @@ export const PeopleSayCarousel = () => {
              navigation={false}
              pagination={{clickakble: true}}
              modules={[EffectFade, Navigation, Pagination]}
-             className='peopleSay-wrapper'
+            //  className='peopleSay-wrapper'
              autoplay={{delay: 5000}}
             >
                 {/* <div className="overlay"></div> */}
                 <SwiperSlide>
                     <div className='peopleSay-card'>
-                        <div className='peopleSay-mark'>"</div>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
                         <div className='peopleSay-wrapper'>
-
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                    Top notch professional service! From the doctors to the nursing staff, 
+                                    we received personalized care. The follow up was also amazing! I brought my 
+                                    father to Greyscopes at the time when a lot of other hospitals had written him off. 
+                                    Turns out all he needed was a specialized surgery that those other places didn't have 
+                                    the knowledge and/or expertise for. Surgery was successfully carried out and he has made 
+                                    a full recovery. I definitely will recommend this hospital for anyone needing their services
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Sylvia Ofoegbu</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(4).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
                         </div>
                     </div>
                 </SwiperSlide>

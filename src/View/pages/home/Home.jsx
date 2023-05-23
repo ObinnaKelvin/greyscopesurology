@@ -222,6 +222,7 @@ function Home() {
 
         <div className='peopleSay-container'>
             <div className='peopleSay-darkOverlay'></div>
+            <PeopleSayCarousel />
         </div>
     </div>
   )
