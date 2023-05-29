@@ -20,6 +20,15 @@ import machine from "../../assets/images/ventilation.png"
 import stethoscope from "../../assets/images/stethoscope.png"
 import ambulance from "../../assets/images/ambulance.png"
 import clock from "../../assets/images/clock.png"
+import pin from "../../assets/images/pin.png"
+import call from "../../assets/images/call.png"
+import email from "../../assets/images/open.png"
+import coverImage from "../../assets/images/direction.png"
+import twitter from "../../assets/images/twitter.png"
+import facebook from "../../assets/images/facebook.png"
+import instagram from "../../assets/images/instagram.png"
+import youtube from "../../assets/images/youtube.png"
+import appoint from "../../assets/images/appointment-book.png"
 import CountUp from 'react-countup';
 // import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -223,6 +232,44 @@ function Home() {
         <div className='peopleSay-container'>
             <div className='peopleSay-darkOverlay'></div>
             <PeopleSayCarousel />
+        </div>
+
+        <div className='reachOut-container'>
+                <div className="reachOut-wrapper">
+                    <div className="reachOut-left">
+                        <div className="headerText">
+                            <p><h1>Reach out to us!</h1></p>
+                            <p>Let's talk about your health and how we can help you feel better.</p>
+                        </div>
+                        <div className="location">
+                            <p><img class="reachout-icon" src={pin} alt="location" /></p>
+                            <p>9B Idejo street, Victoria Island Lagos.</p>
+                        </div>
+                        <div className="phone">
+                            <p><img class="reachout-icon" src={call} alt="phone" /></p>
+                            <p>08033382044</p>
+                        </div>
+                        <div className="email">
+                            <p><img class="reachout-icon" src={email} alt="email" /></p>
+                            <p>greyscopesurology@gmail.com</p>
+                        </div>
+                        <div className="book-appointment">
+                            <p><img class="reachout-icon" src={appoint} alt="appoint" /></p>
+                            <p>Book an appointment</p>
+                        </div>
+                    </div>
+                    <div className="reachOut-right">
+                        <div className="coverImageHolder">
+                            <img src={coverImage} className='coverImage' alt="Cover Image" />
+                        </div>
+                        <div className="socials">
+                            <img src={twitter} alt="twitter" />
+                            <img src={facebook} alt="facebook" />
+                            <img src={youtube} alt="youtube" />
+                            <img src={instagram} alt="instagram" />
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
   )
