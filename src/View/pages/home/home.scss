@@ -214,19 +214,20 @@
 
             .peopleSay-card {
                 width: 400px;
+                height: 250px;
                 padding: 20px 50px;
                 background-color: white;
                 border-radius: 1em;
                 position: relative;
                 // margin-top: 30px;
-                margin: 29px auto;
+                margin: 45px auto;
 
                 .peopleSay-mark {
                     position: absolute;
-                    width: 70px;
-                    height: 70px;
+                    width: 50px;
+                    height: 50px;
                     border-radius: 50%;
-                    background-color: #1de9b6;
+                    background-color: #00b8d4;
                     font-size: 20px;
                     color: white;
                     display: flex;
@@ -236,19 +237,22 @@
                     margin-top: -30px;
 
                     img {
-                        width: 30px;
+                        width: 20px;
                     }
                 }
                 .peopleSay-wrapper{
                     display: flex;
                     flex-direction: column;
                     // border: 1px solid red;
-                    width: 400px;
+                    width: 450px;
                     padding: 5px;
+                    margin-left: -30px;
+                    // margin-top: 30px;
 
                     .peopleSay-comment {
-                        width: 400px;
+                        width: 450px;
                         padding: 5px;
+                        font-size: 14px;
                     }
                     .peopleSay-user {
                         font-style: italic;
@@ -262,8 +266,8 @@
                         height: 20px;
                         // padding: 5px;
                         img {
-                            width: 20px;
-                            height: 20px;
+                            width: 15px;
+                            height: 15px;
                         }
                     }
                 }
@@ -473,6 +477,7 @@
     
             .peopleSay-card {
                 width: 200px;
+                height: 300px;
                 // width: 100%;
                 // padding: 10px 30px; //commented...
                 background-color: white;
@@ -486,7 +491,8 @@
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
-                    background-color: #1de9b6;
+                    background-color: #00b8d4;
+                    // background-color: #1de9b6;
                     font-size: 20px;
                     color: white;
                     display: flex;
@@ -528,8 +534,8 @@
                         height: 20px;
                         // padding: 5px;
                         img {
-                            width: 20px;
-                            height: 20px;
+                            width: 15px;
+                            height: 15px;
                         }
                     }
                 }

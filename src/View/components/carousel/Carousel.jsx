@@ -82,7 +82,7 @@ export const PeopleSayCarousel = () => {
              pagination={{clickakble: true}}
              modules={[EffectFade, Navigation, Pagination]}
             //  className='peopleSay-wrapper'
-             autoplay={{delay: 5000}}
+             autoplay={{delay: 10000}}
             >
                 {/* <div className="overlay"></div> */}
                 <SwiperSlide>
@@ -120,18 +120,82 @@ export const PeopleSayCarousel = () => {
                         <div className='peopleSay-wrapper'>
                             <div className='peopleSay-comment'>
                                 {/* <p> */}
-                                    Top notch professional service! From the doctors to the nursing staff, 
-                                    we received personalized care. The follow up was also amazing! I brought my 
-                                    father to Greyscopes at the time when a lot of other hospitals had written him off. 
-                                    Turns out all he needed was a specialized surgery that those other places didn't have 
-                                    the knowledge and/or expertise for. Surgery was successfully carried out and he has made 
-                                    a full recovery. I definitely will recommend this hospital for anyone needing their services
+                                In March 2022, I had a procedure (Lithotripsy) that was successful by my Urologist Dr.CHINEDU ANYADIKE and his amazing team who made me laugh and less nervous during the procedure. 
+                                I was too scared of going into the theatre at first but they were so sweet to me and made me comfortable during the procedure.
+                                All Glory to God he made this possible. And may his healing be permanent in my life in Jesus name Amen.
                                 {/* </p> */}
                             </div>
-                            <div className='peopleSay-user'> — Sylvia Ofoegbu</div>
+                            <div className='peopleSay-user'> — Favour Ihuoma Onewo</div>
                             <div className='peopleSay-rating'>
                                 {
-                                    Array(4).fill(0).map((item, index) => 
+                                    Array(5).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
+                        <div className='peopleSay-wrapper'>
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                Lovely nurses and very skilled surgeon. Had an overall pleasant experience.
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Furo Dennar</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(5).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
+                        <div className='peopleSay-wrapper'>
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                Very professional and responsive. Excellent customer service. Health professionals are always on hand to respond to any issues. 
+                                Will definitely recommend.
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Ebele Obidiegwu</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(5).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
+                        <div className='peopleSay-wrapper'>
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                This is one of the best centers for Urology care.
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Adekunle Alpha</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(5).fill(0).map((item, index) => 
                                         <img src={star} alt="Star rating" />
                                     )
                                 }
