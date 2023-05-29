@@ -112,6 +112,33 @@ export const PeopleSayCarousel = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
+                        <div className='peopleSay-wrapper'>
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                    Top notch professional service! From the doctors to the nursing staff, 
+                                    we received personalized care. The follow up was also amazing! I brought my 
+                                    father to Greyscopes at the time when a lot of other hospitals had written him off. 
+                                    Turns out all he needed was a specialized surgery that those other places didn't have 
+                                    the knowledge and/or expertise for. Surgery was successfully carried out and he has made 
+                                    a full recovery. I definitely will recommend this hospital for anyone needing their services
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Sylvia Ofoegbu</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(4).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
 
             </Swiper>
         </>
