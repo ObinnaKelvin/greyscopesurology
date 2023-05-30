@@ -359,31 +359,6 @@
                 flex-direction: column;
                 padding: 30px;
 
-                .coverImageHolder{
-
-                    .coverImage{
-                        width: 400px;
-                        background-size: cover;
-                        margin-top: 30px;
-                    }
-                }
-
-                .socials {
-                    height: 40px;
-                    // border: 1px solid blue;
-                    padding: 0px 20px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 40px;
-
-                    img{
-                        width: 35px;
-                        opacity: 0.8;
-                    }
-                }
-
                 .msg-form {
                     display: flex;
                     flex-direction: column;
@@ -701,6 +676,142 @@
                     }
                 }
 
+            }
+        }
+
+        .reachOut-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: none;
+    
+            .reachOut-wrapper {
+                max-width: 1300px;
+                width: 100%;
+                height: auto;
+                // border: 1px solid red;
+                border-radius: 2em;
+                margin: auto auto;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 10px 23px rgb(0 0 0 / 12%);
+    
+                .reachOut-left {
+                    width: 90%;
+                    // border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 20px 20px;
+    
+                    .headerText p:nth-child(1){
+                        font-size: 20px;
+                        // color: #c62828;
+                        // color: #2196f3;
+                        opacity: 0.4;
+                    }
+    
+                    .headerText p:nth-child(2){
+                        font-weight: 300;
+                        // color: #ccccff;
+                    }
+    
+                    .location {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                    }
+    
+                    .phone {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                    }
+    
+                    .email {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                    }
+    
+                    .book-appointment {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                        background-color: #c62828;
+                        color: white;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px;
+                        border-radius: 3px;
+                    }
+    
+                    .reachout-icon {
+                        width: 25px;
+                    }
+                }
+    
+                .reachOut-right {
+                    width: 90%;
+                    // border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 20px;
+    
+                    .msg-form {
+                        display: flex;
+                        flex-direction: column;
+    
+                        .msg-form-header {
+                            font-weight: 400;
+                            color: #00b8d4;
+                            // opacity: 0.6;
+                        }
+    
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            // border: 1px solid red;
+                            gap: 50px;
+                            margin-top: 40px;
+    
+                            .formInput {
+                                width: 100%;
+                                outline: none;
+                                border: none;
+                                border-bottom: 1px solid #ccccff;
+                                padding: 10px 0px;
+                            }
+                            .formTextArea {
+                                width: 100%;
+                                outline: none;
+                                border: none;
+                                border-bottom: 1px solid #ccccff;
+                                padding: 10px 0px;
+                            }
+                            section {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+                            }
+                            .send-button {
+                                // background-color: #00b8d4;
+                                background-color: #c62828;
+                                outline: none;
+                                border: none;
+                                height: 50px;
+                                border-radius: 2em;
+                                color: white;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
             }
         }
     

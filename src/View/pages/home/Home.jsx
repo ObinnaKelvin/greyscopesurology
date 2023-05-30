@@ -254,26 +254,17 @@ function Home() {
                         </div> */}
                     </div>
                     <div className="reachOut-right">
-                        {/* <div className="coverImageHolder">
-                            <img src={coverImage} className='coverImage' alt="Cover Image" />
-                        </div> */}
-                        {/* <div className="socials">
-                            <img src={twitter} alt="twitter" />
-                            <img src={facebook} alt="facebook" />
-                            <img src={youtube} alt="youtube" />
-                            <img src={instagram} alt="instagram" />
-                        </div> */}
                         <div className="msg-form">
-                            <p className='msg-form-header'>We will respond to you within 24 hours</p>
+                            <p className='msg-form-header'>Drop us a Message!</p>
                             <form>
                                 <section>
                                         <input type="text" className="formInput" placeholder="Your name"/>
                                         <input type="text" className="formInput" placeholder="Your email"/>
                                 </section>
                                 <section>
-                                        <textarea className="formTextArea" type="text" placeholder="Drop us your message."/>
+                                        <textarea className="formTextArea" type="text" placeholder="Message"/>
                                 </section>
-                                <button className='send-button'>Send it!</button>
+                                <button className='send-button'>Send</button>
                             </form>
                         </div>
                     </div>
