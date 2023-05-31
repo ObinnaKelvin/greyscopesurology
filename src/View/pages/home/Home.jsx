@@ -179,7 +179,6 @@ function Home() {
         </div>
 
         <div className="whyUs-container">
-
                 <div className="whyUs-wrapper">
                     <span className="whyUs-header">
                         Why Choose Greyscopes Urology?
@@ -227,6 +226,23 @@ function Home() {
                     </div>
                 </div>
 
+        </div>
+
+        <div className='consult-container'>
+            <div className='consult-darkOverlay'></div>
+            <div className="consult-wrapper">
+                <div className="consult-left">
+                    <p>We've been there. We understand.</p>
+                    <p>Everything we do is driven by our universal mission to enhance
+                        the lives of our patients.
+                    </p>
+                </div>
+                <div className="consult-right">
+                        <div className='consult-button'>
+                            <p>Book an Appointment</p>
+                        </div>
+                </div>
+            </div>
         </div>
 
         <div className='reachOut-container'>

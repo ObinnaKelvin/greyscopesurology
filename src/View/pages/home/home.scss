@@ -196,6 +196,58 @@
 
     }
 
+    .consult-container {
+        width: 100%;
+        height: 200px;
+        background-image: url("../../assets/images/bg5.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .consult-darkOverlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #00b8d4;
+            opacity: 0.7;
+        }
+
+        .consult-wrapper {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+
+            .consult-left {
+                width: 70%;
+                height: 100%;
+                // border: 1px solid brown;
+                color: white;
+                padding: 40px 0px 0px 50px;
+
+                p:nth-child(1) {
+                    font-size: 40px;
+                }
+            }
+            .consult-right {
+                width: 30%;
+                height: 200px;
+                // border: 1px solid brown;
+                display: flex;
+                align-items: center;
+
+                .consult-button {
+                    width: 300px;
+                    background-color: white;
+                    color: #00b8d4;
+                    padding: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
     .peopleSay-container {
         width: 100%;
         height: 450px;
@@ -595,6 +647,65 @@
     
         }
 
+        .consult-container {
+            width: 100%;
+            height: 400px;
+            background-image: url("../../assets/images/bg5.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+    
+            .consult-darkOverlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: #00b8d4;
+                opacity: 0.7;
+            }
+    
+            .consult-wrapper {
+                width: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+    
+                .consult-left {
+                    width: 100%;
+                    color: white;
+                    padding: 10px 0px 0px 0px;
+                    text-align: center;
+
+                    p:nth-child(1) {
+                        font-size: 35px;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                    p:nth-child(2) {
+                        font-size: 17px;
+                        text-align: center;
+                        font-weight: 300;
+                        padding: 10px;
+                    }
+                }
+
+                .consult-right {
+                    width: 100%;
+                    display: flex;
+                    // align-items: center;
+                    justify-content: center;
+
+                    .consult-button {
+                        width: 300px;
+                        background-color: white;
+                        color: #00b8d4;
+                        padding: 10px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
         .peopleSay-container {
             width: 100%;
             height: 450px;
@@ -710,11 +821,13 @@
                         // color: #c62828;
                         // color: #2196f3;
                         opacity: 0.4;
+                        text-align: center;
                     }
     
                     .headerText p:nth-child(2){
                         font-weight: 300;
                         // color: #ccccff;
+                        text-align: center;
                     }
     
                     .location {
@@ -770,6 +883,7 @@
                         .msg-form-header {
                             font-weight: 400;
                             color: #00b8d4;
+                            text-align: center;
                             // opacity: 0.6;
                         }
     
