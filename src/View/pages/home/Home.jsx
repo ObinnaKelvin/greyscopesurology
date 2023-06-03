@@ -264,10 +264,6 @@ function Home() {
                             <p><img class="reachout-icon" src={email} alt="email" /></p>
                             <p>greyscopesurology@gmail.com</p>
                         </div>
-                        {/* <div className="book-appointment">
-                            <p><img class="reachout-icon" src={appoint} alt="appoint" /></p>
-                            <p>Book an appointment</p>
-                        </div> */}
                     </div>
                     <div className="reachOut-right">
                         <div className="msg-form">

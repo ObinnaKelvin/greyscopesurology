@@ -1,120 +1,149 @@
 .navBar {
 
-    .link {
-        text-decoration: none;
-        // color: white;
-        color: #9e9e9e;
-    }
-    .link.active {
-        text-decoration: none;
-        // color: white;
-        color: #c62828;
-    }
+    
+        .navBar-header {
+            // border: 1px solid blue;
+            padding: 10px 30px 10px 10px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 13px;
+            z-index: 1;
+            margin-top: 10px;
 
-    // border: 1px solid blue;
-    padding: 10px 30px 10px 10px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 13px;
-    z-index: 1;
-    margin-top: 10px;
-    // opacity: 0.1;
+            .link {
+                text-decoration: none;
+                // color: white;
+                color: #9e9e9e;
+            }
+            .link.active {
+                text-decoration: none;
+                // color: white;
+                color: #c62828;
+            }
 
-    .navBar-header-logo {
-        width: 20%;
+            .navBar-header-logo {
+                width: 20%;
 
-        .nav-logo {
-            width: 140px;
-            // border: 1px solid red;
-            margin: -7px 0px 0px 0px;
-            position: absolute;
-            cursor: pointer;
+                .nav-logo {
+                    width: 140px;
+                    // border: 1px solid red;
+                    margin: -7px 0px 0px 0px;
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+
+            .navBar-header-right {
+                width: 45%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                // border: 1px solid ;
+
+                .book {
+                    padding: 7px 15px;
+                    // border: 1px solid;
+                    // border-radius: 25em;
+                    // background-color: #2196f3;
+                    background-color: #c62828;
+                    // background-color: #e53935;
+                    color: white;
+                }
+            }
+
+            .navbar-hamburger {
+                display: flex;
+                flex-direction: column;
+                width: 30px;
+                cursor: pointer;
+                // display: none;
+                // z-index: 7;
+                visibility: hidden;
+
+                .hamOne {
+                    background-color: #c62828;
+                    height: 2px;
+                    margin-bottom: 7px;
+                    border-radius: 50px;
+                    width: 60%;
+                }
+                
+                .hamTwo {
+                    background-color: #c62828;
+                    height: 2px;
+                    margin-bottom: 7px;
+                    border-radius: 50px;
+                }
+                
+                .hamThree {
+                    background-color: #c62828;
+                    height: 2px;
+                    border-radius: 50px;
+                    width: 70%;
+                    /* margin-left: 10px; */
+                }
+            }
         }
-    }
+        .navbar-sidebar {
+            .navbar-overlay{
 
-    .navBar-header-right {
-        width: 45%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        // border: 1px solid ;
-
-        .book {
-            padding: 7px 15px;
-            // border: 1px solid;
-            // border-radius: 25em;
-            // background-color: #2196f3;
-            background-color: #c62828;
-            // background-color: #e53935;
-            color: white;
+            }
         }
-    }
-
-    .navbar-hamburger {
-        display: flex;
-        flex-direction: column;
-        width: 30px;
-        cursor: pointer;
-        //z-index: 7;
-
-        .hamOne {
-            background-color: #c62828;
-            height: 2px;
-            margin-bottom: 7px;
-            border-radius: 50px;
-            width: 60%;
-        }
-        
-        .hamTwo {
-            background-color: #c62828;
-            height: 2px;
-            margin-bottom: 7px;
-            border-radius: 50px;
-        }
-        
-        .hamThree {
-            background-color: #c62828;
-            height: 2px;
-            border-radius: 50px;
-            width: 70%;
-            /* margin-left: 10px; */
-        }
-    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 400px){ //Mobile
 
     .navBar {
 
-        .navBar-header-right {
-            display: none;
+        .navBar-header{
+            .navBar-header-right {
+                display: none;
+            }
+            .navbar-hamburger{
+                visibility: visible;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 450px){ //Mobile
     .navBar {
-        .navBar-header-right {
-            display: none;
+        .navBar-header{
+            .navBar-header-right {
+                display: none;
+            }
+            .navbar-hamburger{
+                visibility: visible;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 451px) and (max-width: 800px){ //Mini Tablet
     .navBar {
-        .navBar-header-right {
-            display: none;
+        .navBar-header {
+            .navBar-header-right {
+                display: none;
+            }
+            .navbar-hamburger{
+                visibility: visible;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 801px) and (max-width: 960px){ //Tablet
     .navBar {
-        .navBar-header-right {
-            display: none;
+        .navBar-header {
+            .navBar-header-right {
+                display: none;
+            }
+            .navbar-hamburger{
+                visibility: visible;
+            }
         }
     }
 }
@@ -125,20 +154,6 @@
     .navBar {
         .navbar-hamburger {
             display: none;
-            border: 1px solid red;
-            width: 0px;
-            
-            .hamOne {
-                display: none;
-            }
-            
-            .hamTwo {
-                display: none;
-            }
-            
-            .hamThree {
-                display: none;
-            }
         }
 
     }
