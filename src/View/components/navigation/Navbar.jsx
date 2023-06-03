@@ -48,8 +48,23 @@ function Navbar() {
                 <span className="hamThree"></span>
           </div>
         </div>
-        <div className='navbar-sidebar'>
-            <div className="navbar-overlay"></div>
+        <div className={ open ? 'navbar-sidebar open' : 'navbar-sidebar'}>
+            {/* <div className="navbar-overlay"></div> */}
+            <Link to={'/'}  className='link active'>
+              <div>Home</div>
+            </Link>
+            <Link to={'/about'} className='link'>
+              <div>About</div>
+            </Link>
+            <Link to={'/blog'} className='link'>
+              <div>Blog</div>
+            </Link>
+            <Link to={'/contact'} className='link'>
+              <div>Contact Us</div>
+            </Link>
+            <Link to={'/book'} className='link book'>
+              <div>Book Appointment</div>
+            </Link>
         </div>
     </div>
   )
