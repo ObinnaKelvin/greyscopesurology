@@ -30,6 +30,9 @@ function Navbar() {
             <Link to={'/blog'} className='link'>
               <div>Blog</div>
             </Link>
+            <Link to={'/gallery'} className='link'>
+              <div>Gallery</div>
+            </Link>
             <Link to={'/contact'} className='link'>
               <div>Contact Us</div>
             </Link>
@@ -58,6 +61,9 @@ function Navbar() {
             </Link>
             <Link to={'/blog'} className='link'>
               <div>Blog</div>
+            </Link>
+            <Link to={'/gallery'} className='link'>
+              <div>Gallery</div>
             </Link>
             <Link to={'/contact'} className='link'>
               <div>Contact Us</div>

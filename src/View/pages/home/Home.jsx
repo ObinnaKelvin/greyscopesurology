@@ -258,7 +258,7 @@ function Home() {
                         </div>
                         <div className="phone">
                             <p><img class="reachout-icon" src={call} alt="phone" /></p>
-                            <p>08033382044</p>
+                            <p>+2349072525094</p>
                         </div>
                         <div className="email">
                             <p><img class="reachout-icon" src={email} alt="email" /></p>
