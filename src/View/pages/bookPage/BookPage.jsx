@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/navigation/Navbar'
 import './bookPage.scss'
+import { clinicData } from './clinicData.jsx'
 
-const bookPage = () => {
+const BookPage = () => {
+
+  const[clinic, setClinic] = useState()
   return (
 
     <div className='bookPage-container'>
@@ -12,16 +15,32 @@ const bookPage = () => {
 
             </div>
             <div className='bookPage-progress-form'>
-              <form>
-                  <section>
-                          <input type="text" className="formInput" placeholder="Your name"/>
-                          <input type="text" className="formInput" placeholder="Your email"/>
-                  </section>
-                  <section>
-                          <textarea className="formTextArea" type="text" placeholder="Message"/>
-                  </section>
-                  <button className='send-button'>Send</button>
-              </form>
+              <div className="bookPage-stage1">
+                <div className='headerText'>General Info</div>
+                <form>
+                    <section>
+                            <input type="text" className="formInput" placeholder="Name"/>
+                            <input type="text" className="formInput" placeholder="Email"/>
+                            <input type="tel" className="formInput" placeholder="Phone"/>
+                    </section>
+                    <section>
+                            <textarea className="formTextArea" type="text" placeholder="Are there some more information you would want the doctor to know about?"/>
+                    </section>
+                    <section>
+                      <select className = 'formSelect' onChange={(e)=>setClinic(e.target.value)} value={clinic}>
+                        <option>**Select a Clinic**</option>
+                        {
+                          clinicData.map((data)=>(
+                              <option value={data.name} key={data.id}>{data.name}</option>
+                          ))
+                        }
+                      </select>
+                    </section>
+                    <button className='next-button'>Next</button>
+                </form>
+              </div>
+              <div className="bookPage-stage2"></div>
+              <div className="bookPage-stage3"></div>
             </div>
         </div>
     </div>
@@ -29,4 +48,4 @@ const bookPage = () => {
   )
 }
 
-export default bookPage
+export default BookPage
