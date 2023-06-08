@@ -1,0 +1,29 @@
+
+.bookPage-container {
+        // display: flex;
+        border: 1px solid black;
+
+    .bookPage-wrapper {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 100px auto;
+        border: 1px solid black;
+
+        .bookPage-progress-status {
+
+            width: 100%;
+            height: 50px;
+            border: 1px solid red;
+            
+        }
+
+        .bookPage-progress-form {
+            
+            border: 1px solid red;
+        }
+        
+    }
+
+}

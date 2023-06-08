@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navigation/Navbar'
 import { HeroCarousel, HeroSwiperCarousel, PeopleSayCarousel } from '../../components/carousel/Carousel'
 import kidney from "../../assets/images/kidneys.gif"
@@ -238,9 +239,11 @@ function Home() {
                     </p>
                 </div>
                 <div className="consult-right">
-                        <div className='consult-button'>
+                    <Link to={'/book-appointment'} className='link'>
+                        <div className='consult-button' >
                             <p>Book an Appointment</p>
                         </div>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -236,13 +236,19 @@
                 display: flex;
                 align-items: center;
 
-                .consult-button {
-                    width: 300px;
-                    background-color: white;
-                    color: #00b8d4;
-                    padding: 10px;
-                    text-align: center;
-                    cursor: pointer;
+                .link {
+
+                    text-decoration: none;
+                    
+                    .consult-button {
+                        width: 300px;
+                        background-color: white;
+                        color: #00b8d4;
+                        padding: 10px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
                 }
             }
         }

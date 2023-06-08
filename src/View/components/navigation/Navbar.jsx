@@ -36,7 +36,7 @@ function Navbar() {
             <Link to={'/contact'} className='link'>
               <div>Contact Us</div>
             </Link>
-            <Link to={'/book'} className='link book'>
+            <Link to={'/book-appointment'} className='link book'>
               <div>Book Appointment</div>
             </Link>
             {/* <div className='navbar-hamburger'>
@@ -68,7 +68,7 @@ function Navbar() {
             <Link to={'/contact'} className='link'>
               <div>Contact Us</div>
             </Link>
-            <Link to={'/book'} className='link book'>
+            <Link to={'/book-appointment'} className='link book'>
               <div>Book Appointment</div>
             </Link>
         </div>
