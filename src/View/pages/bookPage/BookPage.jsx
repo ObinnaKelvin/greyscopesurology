@@ -12,6 +12,7 @@ import callImg from '../../assets/images/iphone.png'
 import clinicImg from '../../assets/images/clinic.png'
 import dateImg from '../../assets/images/calendar.png'
 import infoImg from '../../assets/images/sketching.png'
+import successImg from '../../assets/images/success.jpg'
 
 const BookPage = () => {
   const[name, setName] = useState('')
@@ -20,6 +21,7 @@ const BookPage = () => {
   const[clinic, setClinic] = useState('')
   const[date, setDate] = useState()
   const[description, setDescription] = useState('')
+  const[activeStep, setActiveStep] = useState('')
 
   const onChangeDate = (dateSelected) => {
       // console.log(dateSelected)
@@ -68,7 +70,7 @@ const BookPage = () => {
                              value={description} onChange={(e)=> setDescription(e.target.value)}
                             />
                     </section>
-                    <button className='next-button'>Next</button>
+                    <button className='next-button' onClick={(e)=>setActiveStep(2)}>Next</button>
                 </form>
               </div>
               <div className="bookPage-stage2">
@@ -98,11 +100,30 @@ const BookPage = () => {
                   <p>{description}</p>
                 </div>
                 <div className="nav-buttons">
-                  <button className='nav-button'>Previous</button>
-                  <button className='nav-button'>Submit</button>
+                  <button className='nav-button' onClick={(e)=>setActiveStep(1)}>Previous</button>
+                  <button className='nav-button' onClick={(e)=>setActiveStep(3)}>Submit</button>
                 </div>
               </div>
-              <div className="bookPage-stage3"></div>
+              <div className="bookPage-stage3">
+                <div className="imgHolder">
+                  <img src={successImg} alt='success cover'/>
+                </div>
+                <div className='headerText'>Reservation completed successfully</div>
+                <div className='bodyText'>
+                  Your reservation has been booked successfully.
+                  We will process payment after the service is rendered.
+                </div>
+                <div className='subText'>
+                  An email confirmation will be sent to you shortly.
+                </div>
+                {/* <div className='subText'>
+                  Your order number: URO-1356.
+                </div> */}
+                <div className="nav-buttons">
+                  <button className='nav-button'>Book Again</button>
+                  <button className='nav-button'>Finish</button>
+                </div>
+              </div>
             </div>
         </div>
     </div>
