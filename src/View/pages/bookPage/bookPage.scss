@@ -1,30 +1,44 @@
 
 .bookPage-container {
         // display: flex;
-        border: 1px solid black;
+        // border: 1px solid black;
 
     .bookPage-wrapper {
 
         display: flex;
         flex-direction: column;
-        max-width: 500px;
-        margin: 100px auto;
-        border: 1px solid black;
+        // width: auto;
+        // max-width: 500px;
+        margin: 50px auto;
+        // border: 1px solid black;
 
         .bookPage-progress-status {
 
             width: 100%;
             height: 50px;
-            border: 1px solid red;
+            // border: 1px solid red;
             
         }
 
         .bookPage-progress-form {
             
-            border: 1px solid red;
+            // border: 1px solid red;
+            display: flex;
+            margin: 0px auto;
 
             .bookPage-stage1 {
                 padding: 20px;
+                border: 1px solid red;
+                width: 350px;
+
+                .headerText {
+                    font-size: 15px;
+                    padding: 20px;
+                    background-color: #eceff1;
+                    margin-bottom: 20px;
+                    border-radius: 12px;
+                }
+
                 form {
                     
                     display: flex;
@@ -36,9 +50,14 @@
                         flex-direction: column;
                         gap: 20px;
 
-                        input:focus, textarea:focus {
+                        input:focus, textarea:focus, select:focus {
                             outline: #c62828;
                             border: 1px solid #c62828;
+                        }
+
+                        select {
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
                         }
 
                         .formInput {
@@ -61,6 +80,11 @@
                             border: 1px solid #e0e0e0;
                             // height: 100px;
                         }
+
+                        .calendar {
+                            width: 350px;
+                            margin: 0px auto;
+                        }
                     }
                     .next-button {
                         padding: 10px;
@@ -72,6 +96,129 @@
                         margin: 0px auto;
                     }
                 }
+            }
+
+            .bookPage-stage2 {
+                padding: 20px;
+                border: 1px solid red;
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .headerText {
+                    font-size: 15px;
+                    padding: 20px;
+                    background-color: #eceff1;
+                    // margin-bottom: 20px;
+                    border-radius: 12px;
+                }
+
+                .name {
+                    display: flex;
+                    flex-direction: row;
+                    height: auto;
+                    padding: 15px;
+                    // border: 1px solid black;
+                    gap: 20px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        opacity: 0.6;
+                    }
+                }
+
+                .email {
+                    display: flex;
+                    flex-direction: row;
+                    height: auto;
+                    padding: 15px;
+                    // border: 1px solid black;
+                    gap: 20px;
+
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        opacity: 0.7;
+                    }
+                }
+
+                .phone {
+                    display: flex;
+                    flex-direction: row;
+                    height: auto;
+                    padding: 15px;
+                    // border: 1px solid black;
+                    gap: 20px;
+
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        opacity: 0.7;
+                    }
+                }
+
+                .clinic {
+                    display: flex;
+                    flex-direction: row;
+                    height: auto;
+                    padding: 15px;
+                    // border: 1px solid black;
+                    gap: 20px;
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        opacity: 0.8;
+                    }
+                }
+
+                .date {
+                    display: flex;
+                    flex-direction: row;
+                    height: auto;
+                    padding: 15px;
+                    // border: 1px solid black;
+                    gap: 20px;
+
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        opacity: 0.7;
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: row;
+                    height: auto;
+                    padding: 15px;
+                    // border: 1px solid black;
+                    gap: 20px;
+
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        opacity: 0.7;
+                    }
+                }
+
+                .nav-buttons {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .nav-button {
+                        padding: 10px;
+                        width: 100px;
+                        border-radius: 2em;
+                        border: none;
+                        background-color: #c62828;
+                        color: white;
+                    }
+                }
+
+
             }
         }
         
