@@ -21,7 +21,7 @@ const BookPage = () => {
   const[clinic, setClinic] = useState('')
   const[date, setDate] = useState()
   const[description, setDescription] = useState('')
-  const[activeStep, setActiveStep] = useState('')
+  const[activeStep, setActiveStep] = useState(1)
 
   const onChangeDate = (dateSelected) => {
       // console.log(dateSelected)
@@ -33,12 +33,19 @@ const BookPage = () => {
 
     <div className='bookPage-container'>
         <Navbar />
+        
+        <div className="bookPage-banner">
+            <div className='bookPage-darkOverlay'></div>
+            <div className="bookPage-header">
+                    <p>Book Appointment</p>
+            </div>
+        </div>
         <div className="bookPage-wrapper">
             <div className='bookPage-progress-status'>
 
             </div>
             <div className='bookPage-progress-form'>
-              <div className="bookPage-stage1">
+              <div className={`bookPage-stage1 ${activeStep === 1 ? "active" : "inactive" }`}>
                 <div className='headerText'>General Info</div>
                 <form>
                     <section>
@@ -70,10 +77,11 @@ const BookPage = () => {
                              value={description} onChange={(e)=> setDescription(e.target.value)}
                             />
                     </section>
-                    <button className='next-button' onClick={(e)=>setActiveStep(2)}>Next</button>
+                    <div className='next-button' onClick={(e)=>setActiveStep(2)}>Next</div>
+                    {/* <button className='next-button' onClick={(e)=>setActiveStep(2)}>Next</button> */}
                 </form>
               </div>
-              <div className="bookPage-stage2">
+              <div className={`bookPage-stage2 ${activeStep === 2 ? "active" : "inactive" }`}>
                 <div className='headerText'>Summary</div>
                 <div className="name">
                   <img src={userImg} alt='user png'/>
@@ -100,11 +108,13 @@ const BookPage = () => {
                   <p>{description}</p>
                 </div>
                 <div className="nav-buttons">
-                  <button className='nav-button' onClick={(e)=>setActiveStep(1)}>Previous</button>
-                  <button className='nav-button' onClick={(e)=>setActiveStep(3)}>Submit</button>
+                  {/* <button className='nav-button' onClick={(e)=>setActiveStep(1)}>Previous</button>
+                  <button className='nav-button' onClick={(e)=>setActiveStep(3)}>Submit</button> */}
+                  <div className='nav-button' onClick={(e)=>setActiveStep(1)}>Previous</div>
+                  <div className='nav-button' onClick={(e)=>setActiveStep(3)}>Submit</div>
                 </div>
               </div>
-              <div className="bookPage-stage3">
+              <div className={`bookPage-stage3 ${activeStep === 3 ? "active" : "inactive" }`}>
                 <div className="imgHolder">
                   <img src={successImg} alt='success cover'/>
                 </div>
