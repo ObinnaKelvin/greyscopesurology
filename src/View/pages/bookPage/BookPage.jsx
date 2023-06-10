@@ -25,12 +25,22 @@ const BookPage = () => {
   const[date, setDate] = useState()
   const[description, setDescription] = useState('')
   const[activeStep, setActiveStep] = useState(1)
+  const[openDate, setOpenDate] = useState(false)
   const[buttonChange, setButtonChange] = useState("Submit")
 
   const onChangeDate = (dateSelected) => {
       // console.log(dateSelected)
       // console.log(format(dateSelected, 'dd/MM/yyyy'))
-      setDate(format(dateSelected, 'MM/dd/yyyy'))
+      setDate(format(dateSelected, 'eeee do LLLL yyyy'))
+  }
+
+  const clearFields = (name,email,phone,clinic,date) => {
+    setName('');
+    setEmail('');
+    setPhone('');
+    setClinic('');
+    setDate('');
+    setDescription('');
   }
 
   const handleSubmit = (e) => {
@@ -46,7 +56,7 @@ const BookPage = () => {
         .then((result) => {
           setButtonChange("Submit");
           setActiveStep(3);
-          // alert('Email Sent!');
+          clearFields() //Clears all fields
               console.log(result.text);
 
         }, (error) => {
@@ -94,10 +104,10 @@ const BookPage = () => {
                       </select>
                     </section>
                     <section>
-                      <div className="calendar">
+                      <input type="text" className="formInput" name="user_appointment_date" placeholder="Select Appointment Date" value={date} onChange={(e)=> setDate(e.target.value)} onClick={()=>setOpenDate(!openDate)}/>
+                      <div className={`calendar ${openDate ? 'active' : 'inactive'}`} onClick={()=>setOpenDate(false)}>
                         <Calendar
                           onChange={onChangeDate}
-                          name="user_appointment_date"
                           // ranges={date}
                           date={new Date()}
                         />
