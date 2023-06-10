@@ -16,7 +16,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            background-color: black;
+            // background-color: black;
             opacity: 0.4;
             z-index: 1;
         }
@@ -43,7 +43,7 @@
         flex-direction: column;
         // width: auto;
         // max-width: 500px;
-        margin: 50px auto;
+        margin: 0px auto;
         // border: 1px solid black;
 
         .bookPage-progress-status {
@@ -146,8 +146,8 @@
 
             .bookPage-stage1.inactive  {
                 opacity: 0;
-                visibility: hidden;
-                // display: none;
+                // visibility: hidden;
+                display: none;
                 transform: translateY(-20px);
                 transition: 0.5s ease;
                 position: absolute;
