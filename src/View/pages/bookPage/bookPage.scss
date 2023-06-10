@@ -16,7 +16,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            // background-color: black;
+            background-color: black;
             opacity: 0.4;
             z-index: 1;
         }
@@ -394,5 +394,408 @@
         }
         
     }
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 400px){ //Mobile
+
+    .bookPage-container {
+            // display: flex;
+            // border: 1px solid black;
+        .bookPage-banner {
+            // border: 1px solid pink;
+            width: 100%;
+            height: 100px;
+            background-position: bottom;
+            background-size: cover;
+            // background-position-y: -400px;
+
+            .bookPage-darkOverlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.4;
+                z-index: 1;
+            }
+
+            .bookPage-header {
+                max-width: 1300px;
+                // border: 1px solid red;
+                margin: auto auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                color: white;
+
+                p{
+                    z-index: 7;
+                }
+            }
+        }
+
+        .bookPage-wrapper {
+
+            display: flex;
+            flex-direction: column;
+            // width: auto;
+            // max-width: 500px;
+            margin: 0px auto;
+            // border: 1px solid black;
+
+            .bookPage-progress-status {
+
+                width: 100%;
+                height: 50px;
+                // border: 1px solid red;
+                
+            }
+
+            .bookPage-progress-form {
+                
+                // border: 1px solid red;
+                display: flex;
+                margin: 0px auto;
+                gap: 20px;
+
+                .bookPage-stage1 {
+                    padding: 20px 10px 100px 10px;
+                    // border: 1px solid red;
+                    // width: 350px;
+                    width: 100%;
+                    // box-shadow:  0 0 30px rgba(34,34,34,0.25);
+                    border-radius: 2em;
+                    height: max-content;
+
+                    .headerText {
+                        font-size: 15px;
+                        padding: 10px;
+                        background-color: #eceff1;
+                        margin-bottom: 20px;
+                        border-radius: 12px;
+                    }
+
+                    form {
+                        
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        section {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+
+                            input:focus, textarea:focus, select:focus {
+                                outline: #c62828;
+                                border: 1px solid #c62828;
+                            }
+
+                            select {
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                            }
+
+                            .formInput {
+                                width: 97%;
+                                padding: 15px 0px 15px 15px;
+                                border-radius: 2em;
+                                border: 1px solid #e0e0e0;
+                            }
+
+                            .formTextArea {
+                                padding: 20px;
+                                border-radius: 2em;
+                                border: 1px solid #e0e0e0;
+                                height: 100px;
+                            }
+
+                            .formSelect {
+                                padding: 20px;
+                                border-radius: 2em;
+                                border: 1px solid #e0e0e0;
+                                // height: 100px;
+                            }
+
+                            .calendar {
+                                width: 350px;
+                                margin: 0px auto;
+                            }
+
+                            .calendar.active {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0);
+                                transition: 0.5s ease;
+                            }
+
+                            .calendar.inactive {
+                                opacity: 0;
+                                // visibility: hidden;
+                                display: none;
+                                transform: translateY(-20px);
+                                transition: 0.5s ease;
+                                position: absolute;
+                            }
+                        }
+                        .next-button {
+                            padding: 10px;
+                            width: 100px;
+                            border-radius: 2em;
+                            border: none;
+                            background-color: #c62828;
+                            color: white;
+                            margin: 0px auto;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .bookPage-stage1.active {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    transition: 0.5s ease;
+                }
+
+                .bookPage-stage1.inactive  {
+                    opacity: 0;
+                    // visibility: hidden;
+                    display: none;
+                    transform: translateY(-20px);
+                    transition: 0.5s ease;
+                    position: absolute;
+                }
+
+                .bookPage-stage2 {
+                    padding: 20px 20px 100px 20px;
+                    // border: 1px solid red;
+                    width: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    font-size: 13px;
+                    // box-shadow:  0 0 30px rgba(34,34,34,0.25);
+                    border-radius: 2em;
+                    height: max-content;
+
+                    .headerText {
+                        font-size: 15px;
+                        padding: 20px;
+                        background-color: #eceff1;
+                        // margin-bottom: 20px;
+                        border-radius: 12px;
+                    }
+
+                    .name {
+                        display: flex;
+                        flex-direction: row;
+                        height: auto;
+                        padding: 15px;
+                        align-items: center;
+                        // border: 1px solid black;
+                        gap: 20px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            opacity: 0.6;
+                        }
+                    }
+
+                    .email {
+                        display: flex;
+                        flex-direction: row;
+                        height: auto;
+                        padding: 15px;
+                        align-items: center;
+                        // border: 1px solid black;
+                        gap: 20px;
+
+                        img {
+                            width: 23px;
+                            height: 23px;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .phone {
+                        display: flex;
+                        flex-direction: row;
+                        height: auto;
+                        padding: 15px;
+                        // border: 1px solid black;
+                        gap: 20px;
+
+                        img {
+                            width: 23px;
+                            height: 23px;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .clinic {
+                        display: flex;
+                        flex-direction: row;
+                        height: auto;
+                        padding: 15px;
+                        // border: 1px solid black;
+                        gap: 20px;
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            opacity: 0.8;
+                        }
+                    }
+
+                    .date {
+                        display: flex;
+                        flex-direction: row;
+                        height: auto;
+                        padding: 15px;
+                        // border: 1px solid black;
+                        gap: 20px;
+
+                        img {
+                            width: 23px;
+                            height: 23px;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .info {
+                        display: flex;
+                        flex-direction: row;
+                        height: auto;
+                        padding: 15px;
+                        // border: 1px solid black;
+                        gap: 20px;
+
+                        img {
+                            width: 23px;
+                            height: 23px;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .nav-buttons {
+                        display: flex;
+                        justify-content: space-around;
+
+                        .nav-button {
+                            padding: 10px;
+                            width: 100px;
+                            border-radius: 2em;
+                            border: none;
+                            background-color: #c62828;
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+
+
+                }
+
+                .bookPage-stage2.active {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    transition: 0.5s ease;
+                }
+
+                .bookPage-stage2.inactive  {
+                    opacity: 0;
+                    visibility: hidden;
+                    // display: none;
+                    transform: translateY(-20px);
+                    transition: 0.5s ease;
+                    border: 1px solid red;
+                    position: absolute;
+                }
+
+                .bookPage-stage3 {
+                    width: 350px;
+                    // box-shadow:  0 0 30px rgba(34,34,34,0.25);
+                    border-radius: 2em;
+                    height: max-content;
+                    padding: 20px 20px 100px 20px;
+
+                    .imgHolder{
+                        width: 100%;
+                        display: flex;
+                        // border: 1px solid red;
+
+                        img {
+                            background-size: cover;
+                            width: 300px;
+                            margin: 0px auto;
+                            // border: 1px solid red;
+                        }
+                    }
+                    .headerText {
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 500;
+                    }
+
+                    .bodyText {
+                        padding: 15px;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 0.6;
+                    }
+
+                    .subText {
+                        padding: 20px;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 500;
+                        opacity: 0.6;
+
+                    }
+
+                    .nav-buttons {
+                        display: flex;
+                        justify-content: space-around;
+
+                        .nav-button {
+                            padding: 10px;
+                            width: 100px;
+                            border-radius: 2em;
+                            border: none;
+                            background-color: #c62828;
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+
+
+                }
+
+                .bookPage-stage3.active {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    transition: 0.5s ease;
+                }
+
+                .bookPage-stage3.inactive  {
+                    opacity: 0;
+                    visibility: hidden;
+                    // display: none;
+                    transform: translateY(-20px);
+                    transition: 0.5s ease;
+                    position: absolute;
+                }
+            }
+            
+        }
+
+    }    
 
 }
