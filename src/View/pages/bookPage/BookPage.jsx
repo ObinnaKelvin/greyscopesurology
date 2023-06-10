@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from '../../components/navigation/Navbar'
+import emailjs from "@emailjs/browser";
 import { Calendar } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
@@ -13,8 +14,10 @@ import clinicImg from '../../assets/images/clinic.png'
 import dateImg from '../../assets/images/calendar.png'
 import infoImg from '../../assets/images/sketching.png'
 import successImg from '../../assets/images/success.jpg'
+import { Link } from 'react-router-dom';
 
 const BookPage = () => {
+  const formRef = useRef()
   const[name, setName] = useState('')
   const[email, setEmail] = useState('')
   const[phone, setPhone] = useState('')
@@ -22,11 +25,38 @@ const BookPage = () => {
   const[date, setDate] = useState()
   const[description, setDescription] = useState('')
   const[activeStep, setActiveStep] = useState(1)
+  const[buttonChange, setButtonChange] = useState("Submit")
 
   const onChangeDate = (dateSelected) => {
       // console.log(dateSelected)
       // console.log(format(dateSelected, 'dd/MM/yyyy'))
       setDate(format(dateSelected, 'MM/dd/yyyy'))
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(name && email && phone && clinic && date) {
+      setButtonChange("Sending...");
+      emailjs
+        .sendForm(
+          'service_kmxu2ia', 
+          'template_yqa4rgc', 
+          formRef.current, 
+          'iSH_B0Jhf97BjMuAD')
+        .then((result) => {
+          setButtonChange("Submit");
+          setActiveStep(3);
+          // alert('Email Sent!');
+              console.log(result.text);
+
+        }, (error) => {
+              console.log(error.text);
+        });	
+
+    }
+    else {
+      alert (`Please make sure that "name", "email", "phone", "clinic", and "date" fields are filled`)
+    }
   }
 
   return (
@@ -47,14 +77,14 @@ const BookPage = () => {
             <div className='bookPage-progress-form'>
               <div className={`bookPage-stage1 ${activeStep === 1 ? "active" : "inactive" }`}>
                 <div className='headerText'>General Info</div>
-                <form>
+                <form ref={formRef}>
                     <section>
-                            <input type="text" className="formInput" placeholder="Name" value={name} onChange={(e)=> setName(e.target.value)}/>
-                            <input type="text" className="formInput" placeholder="Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
-                            <input type="tel" className="formInput" placeholder="Phone" value={phone} onChange={(e)=> setPhone(e.target.value)}/>
+                            <input type="text" className="formInput" name="user_name" placeholder="Name" value={name} onChange={(e)=> setName(e.target.value)}/>
+                            <input type="text" className="formInput" name="user_email" placeholder="Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
+                            <input type="tel" className="formInput"name="user_phone" placeholder="Phone" value={phone} onChange={(e)=> setPhone(e.target.value)}/>
                     </section>
                     <section>
-                      <select className = 'formSelect' onChange={(e)=>setClinic(e.target.value)} value={clinic}>
+                      <select className = 'formSelect' name="user_appointment_clinic" onChange={(e)=>setClinic(e.target.value)} value={clinic}>
                         <option>- Choose a Clinic -</option>
                         {
                           clinicData.map((data)=>(
@@ -67,13 +97,14 @@ const BookPage = () => {
                       <div className="calendar">
                         <Calendar
                           onChange={onChangeDate}
+                          name="user_appointment_date"
                           // ranges={date}
                           date={new Date()}
                         />
                       </div>
                     </section>
                     <section>
-                            <textarea className="formTextArea" type="text" placeholder="Are there some more information you would want the doctor to know about?"
+                            <textarea className="formTextArea" type="text"name="user_additional_info" placeholder="Are there some more information you would want the doctor to know about?"
                              value={description} onChange={(e)=> setDescription(e.target.value)}
                             />
                     </section>
@@ -111,7 +142,7 @@ const BookPage = () => {
                   {/* <button className='nav-button' onClick={(e)=>setActiveStep(1)}>Previous</button>
                   <button className='nav-button' onClick={(e)=>setActiveStep(3)}>Submit</button> */}
                   <div className='nav-button' onClick={(e)=>setActiveStep(1)}>Previous</div>
-                  <div className='nav-button' onClick={(e)=>setActiveStep(3)}>Submit</div>
+                  <div className='nav-button' onClick={handleSubmit}>{buttonChange}</div>
                 </div>
               </div>
               <div className={`bookPage-stage3 ${activeStep === 3 ? "active" : "inactive" }`}>
@@ -130,8 +161,10 @@ const BookPage = () => {
                   Your order number: URO-1356.
                 </div> */}
                 <div className="nav-buttons">
-                  <button className='nav-button'>Book Again</button>
-                  <button className='nav-button'>Finish</button>
+                  {/* <button className='nav-button'>Book Again</button>
+                  <button className='nav-button'>Finish</button> */}
+                  <div className='nav-button' onClick={(e)=>setActiveStep(1)}>Book Again</div>
+                  <Link to='/'><div className='nav-button'>Finish</div></Link>
                 </div>
               </div>
             </div>
