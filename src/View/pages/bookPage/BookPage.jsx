@@ -104,7 +104,7 @@ const BookPage = () => {
                       </select>
                     </section>
                     <section>
-                      <input type="text" className="formInput" name="user_appointment_date" placeholder="Select Appointment Date" value={date} onChange={(e)=> setDate(e.target.value)} onClick={()=>setOpenDate(!openDate)}/>
+                      <input type="text" className="formInput" name="user_appointment_date" placeholder="Select Appointment Date" value={date} onChange={(e)=> setDate(e.target.value)} onClick={()=>setOpenDate(!openDate)} />
                       <div className={`calendar ${openDate ? 'active' : 'inactive'}`} onClick={()=>setOpenDate(false)}>
                         <Calendar
                           onChange={onChangeDate}

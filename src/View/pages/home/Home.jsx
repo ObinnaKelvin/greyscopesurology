@@ -24,17 +24,12 @@ import clock from "../../assets/images/clock.png"
 import pin from "../../assets/images/pin.png"
 import call from "../../assets/images/call.png"
 import email from "../../assets/images/open.png"
-import coverImage from "../../assets/images/direction.png"
-import twitter from "../../assets/images/twitter.png"
-import facebook from "../../assets/images/facebook.png"
-import instagram from "../../assets/images/instagram.png"
-import youtube from "../../assets/images/youtube.png"
-import appoint from "../../assets/images/appointment-book.png"
 import CountUp from 'react-countup';
+import './home.scss';
+import Footer from '../../components/footer/Footer';
 // import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import './home.scss';
 
 function Home() {
 
@@ -290,6 +285,7 @@ function Home() {
             <div className='peopleSay-darkOverlay'></div>
             <PeopleSayCarousel />
         </div>
+        <Footer />
     </div>
   )
 }

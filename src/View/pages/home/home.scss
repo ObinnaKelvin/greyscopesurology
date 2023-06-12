@@ -715,90 +715,6 @@
             }
         }
 
-        .peopleSay-container {
-            width: 100%;
-            height: 450px;
-            background-image: url("../../assets/images/peoplesay.jpg");
-            background-size: cover;
-            background-position: center;
-            position: relative;
-    
-            .peopleSay-darkOverlay {
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                background-color: black;
-                opacity: 0.5;
-            }
-    
-            .peopleSay-card {
-                width: 200px;
-                height: 300px;
-                // width: 100%;
-                // padding: 10px 30px; //commented...
-                background-color: white;
-                border-radius: 1em;
-                position: relative;
-                // margin-top: 30px;
-                margin: 29px auto;
-
-                .peopleSay-mark {
-                    position: absolute;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    background-color: #00b8d4;
-                    // background-color: #1de9b6;
-                    font-size: 20px;
-                    color: white;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: -59px;
-                    margin-top: -38px;
-
-                    img {
-                        width: 17px;
-                    }
-                }
-                .peopleSay-wrapper{
-                    display: flex;
-                    flex-direction: column;
-                    // border: 1px solid green;
-                    width: 250px;
-                    // width: 100%;
-                    padding: 5px; //commented...
-                    margin-left: -30px;
-
-                    .peopleSay-comment {
-                        // width: 400px;
-                        width: 100%;
-                        padding: 5px;
-                        font-size: 12px;
-                        // border: 1px solid red;
-                        margin-left: -7px;
-                    }
-                    .peopleSay-user {
-                        font-style: italic;
-                        width: 400px;
-                        padding: 5px;
-                    }
-                    .peopleSay-rating {
-                        // border: 1px solid red;
-                        // width: auto;
-                        max-width: fit-content;
-                        height: 20px;
-                        // padding: 5px;
-                        img {
-                            width: 15px;
-                            height: 15px;
-                        }
-                    }
-                }
-
-            }
-        }
-
         .reachOut-container {
             width: 100%;
             height: auto;
@@ -935,6 +851,90 @@
                         }
                     }
                 }
+            }
+        }
+
+        .peopleSay-container {
+            width: 100%;
+            height: 450px;
+            background-image: url("../../assets/images/peoplesay.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+    
+            .peopleSay-darkOverlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.5;
+            }
+    
+            .peopleSay-card {
+                width: 200px;
+                height: 300px;
+                // width: 100%;
+                // padding: 10px 30px; //commented...
+                background-color: white;
+                border-radius: 1em;
+                position: relative;
+                // margin-top: 30px;
+                margin: 29px auto;
+
+                .peopleSay-mark {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #00b8d4;
+                    // background-color: #1de9b6;
+                    font-size: 20px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: -59px;
+                    margin-top: -38px;
+
+                    img {
+                        width: 17px;
+                    }
+                }
+                .peopleSay-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    // border: 1px solid green;
+                    width: 250px;
+                    // width: 100%;
+                    padding: 5px; //commented...
+                    margin-left: -30px;
+
+                    .peopleSay-comment {
+                        // width: 400px;
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 12px;
+                        // border: 1px solid red;
+                        margin-left: -7px;
+                    }
+                    .peopleSay-user {
+                        font-style: italic;
+                        width: 400px;
+                        padding: 5px;
+                    }
+                    .peopleSay-rating {
+                        // border: 1px solid red;
+                        // width: auto;
+                        max-width: fit-content;
+                        height: 20px;
+                        // padding: 5px;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+
             }
         }
     
@@ -1183,6 +1183,229 @@
                         cursor: pointer;
                     }
                 }
+            }
+        }
+
+        .reachOut-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: none;
+    
+            .reachOut-wrapper {
+                max-width: 1300px;
+                width: 100%;
+                height: auto;
+                // border: 1px solid red;
+                border-radius: 2em;
+                margin: auto auto;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 10px 23px rgb(0 0 0 / 12%);
+    
+                .reachOut-left {
+                    width: 90%;
+                    // border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 20px 20px;
+    
+                    .headerText p:nth-child(1){
+                        font-size: 20px;
+                        // color: #c62828;
+                        // color: #2196f3;
+                        opacity: 0.4;
+                        text-align: center;
+                    }
+    
+                    .headerText p:nth-child(2){
+                        font-weight: 300;
+                        // color: #ccccff;
+                        text-align: center;
+                    }
+    
+                    .location {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                    }
+    
+                    .phone {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                    }
+    
+                    .email {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                    }
+    
+                    .book-appointment {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        font-size: 15px;
+                        background-color: #c62828;
+                        color: white;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px;
+                        border-radius: 3px;
+                    }
+    
+                    .reachout-icon {
+                        width: 25px;
+                    }
+                }
+    
+                .reachOut-right {
+                    width: 90%;
+                    // border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 20px;
+    
+                    .msg-form {
+                        display: flex;
+                        flex-direction: column;
+    
+                        .msg-form-header {
+                            font-weight: 400;
+                            color: #00b8d4;
+                            text-align: center;
+                            // opacity: 0.6;
+                        }
+    
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            // border: 1px solid red;
+                            gap: 50px;
+                            margin-top: 40px;
+    
+                            .formInput {
+                                width: 100%;
+                                outline: none;
+                                border: none;
+                                border-bottom: 1px solid #ccccff;
+                                padding: 10px 0px;
+                            }
+                            .formTextArea {
+                                width: 100%;
+                                outline: none;
+                                border: none;
+                                border-bottom: 1px solid #ccccff;
+                                padding: 10px 0px;
+                            }
+                            section {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+                            }
+                            .send-button {
+                                // background-color: #00b8d4;
+                                background-color: #c62828;
+                                outline: none;
+                                border: none;
+                                height: 50px;
+                                border-radius: 2em;
+                                color: white;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .peopleSay-container {
+            width: 100%;
+            height: 450px;
+            background-image: url("../../assets/images/peoplesay.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+    
+            .peopleSay-darkOverlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.5;
+            }
+    
+            .peopleSay-card {
+                width: 200px;
+                height: 300px;
+                // width: 100%;
+                // padding: 10px 30px; //commented...
+                background-color: white;
+                border-radius: 1em;
+                position: relative;
+                // margin-top: 30px;
+                margin: 29px auto;
+
+                .peopleSay-mark {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #00b8d4;
+                    // background-color: #1de9b6;
+                    font-size: 20px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: -59px;
+                    margin-top: -38px;
+
+                    img {
+                        width: 17px;
+                    }
+                }
+                .peopleSay-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    // border: 1px solid green;
+                    width: 250px;
+                    // width: 100%;
+                    padding: 5px; //commented...
+                    margin-left: -30px;
+
+                    .peopleSay-comment {
+                        // width: 400px;
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 12px;
+                        // border: 1px solid red;
+                        margin-left: -7px;
+                    }
+                    .peopleSay-user {
+                        font-style: italic;
+                        width: 400px;
+                        padding: 5px;
+                    }
+                    .peopleSay-rating {
+                        // border: 1px solid red;
+                        // width: auto;
+                        max-width: fit-content;
+                        height: 20px;
+                        // padding: 5px;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+
             }
         }
     
