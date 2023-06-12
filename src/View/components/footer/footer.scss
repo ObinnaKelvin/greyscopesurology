@@ -1,27 +1,76 @@
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: #c62828;
+    background-color: #263238;
+    // background-color: #c62828;    
+    // background: linear-gradient(
+    //     #c62828,
+    //     #b71c1c
+    //     #e57373
+    // );
 
     .footer-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 30px;
-        margin: 0px auto;
+        margin: 0px auto 20px auto;
         max-width: 1300px;
         // background-color: #ffebee;
 
         .footer-col {
 
             width: 300px;
-            height: 300px;
-            border: 1px solid black;
+            height: max-content;
+            // border: 1px solid black;
             padding: 20px;
             margin-top: 20px;
+            color: white;
 
             img {
                 width: 150px;
+            }
+
+            .logo-text {
+                font-style: italic;
+                color: white;
+                font-weight: 100;
+            }
+
+            .footer-col-header-text {
+                color: #b71c1c;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .footer-col-sub-text {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-weight: 200;
+            }
+            .footer-col-sub-social {
+                display: flex;
+                // flex-direction: column;
+                flex-direction: row;
+                gap: 10px;
+
+                 .footer-col-sub-social-link {
+                    // border: 1px solid red;
+                    padding: 10px;
+                    border-radius: 1em;
+                    background-color: #b71c1c;
+                    // background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                    cursor: pointer;
+
+                    img {
+                        width: 25px;
+                    }
+                 }
             }
 
         }
@@ -31,6 +80,11 @@
         height: 50px;
         // background-color: #d50000;
         background-color: #b71c1c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 13px;
     }
 
 
