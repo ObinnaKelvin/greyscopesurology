@@ -1,6 +1,7 @@
 import React from 'react';
 import './gallery.scss';
 import Navbar from '../../components/navigation/Navbar'
+import Footer from '../../components/footer/Footer';
 
 const Gallery = () => {
   return (
@@ -13,6 +14,7 @@ const Gallery = () => {
                     <p>Gallery</p>
             </div>
         </div>
+      <Footer />
 
     </div>
   )

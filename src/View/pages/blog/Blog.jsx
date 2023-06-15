@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navigation/Navbar'
 import './blog.scss'
+import Footer from '../../components/footer/Footer'
 
 const Blog = () => {
   return (
@@ -19,6 +20,8 @@ const Blog = () => {
                 
             </div>
         </div>
+
+        <Footer />
         
     </div>
   )

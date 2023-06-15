@@ -3,12 +3,12 @@
     .about-banner {
         // border: 1px solid pink;
         width: 100%;
-        height: 250px;
+        height: 160px;
         position: relative;
         background-image: url("../../assets/images/hosp.jpg");
         background-position: bottom;
         background-size: cover;
-        background-position-y: -600px;
+        background-position-y: -400px;
 
         .about-darkOverlay {
             position: absolute;
@@ -26,7 +26,7 @@
             height: 100%;
             display: flex;
             align-items: center;
-            font-size: 70px;
+            font-size: 50px;
             color: white;
 
             p{
@@ -69,6 +69,27 @@
                 p {
                     font-weight: 300;
                 }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 400px){ //Mobile
+
+    .about-container {
+            // display: flex;
+            // border: 1px solid black;
+        .about-banner {
+            // border: 1px solid pink;
+            width: 100%;
+            height: 100px;
+            background-position: bottom;
+            background-size: cover;
+            // background-position-y: -400px;
+            .about-header {
+                font-size: 40px;
+                margin-left: 40px;
             }
         }
     }

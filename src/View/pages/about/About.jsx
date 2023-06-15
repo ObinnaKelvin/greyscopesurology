@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navigation/Navbar'
 import './about.scss'
+import Footer from '../../components/footer/Footer'
 
 const About = () => {
   return (
@@ -31,6 +32,7 @@ const About = () => {
                     </div>
             </div>
         </div>
+        <Footer />
         
     </div>
   )

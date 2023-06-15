@@ -3,7 +3,7 @@
     .gallery-banner {
         // border: 1px solid pink;
         width: 100%;
-        height: 250px;
+        height: 160px;
         position: relative;
         background-image: url("../../assets/images/steth.jpg");
         background-position: bottom;
@@ -26,7 +26,7 @@
             height: 100%;
             display: flex;
             align-items: center;
-            font-size: 70px;
+            font-size: 50px;
             color: white;
 
             p{
@@ -36,4 +36,24 @@
     }
 
 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px){ //Mobile
+
+    .gallery-container {
+            // display: flex;
+            // border: 1px solid black;
+        .gallery-banner {
+            // border: 1px solid pink;
+            width: 100%;
+            height: 100px;
+            background-position: bottom;
+            background-size: cover;
+            background-position-y: -300px;
+            .gallery-header {
+                font-size: 40px;
+                margin-left: 40px;
+            }
+        }
+    }
 }

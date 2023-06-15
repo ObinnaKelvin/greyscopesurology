@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navigation/Navbar'
 import { HeroCarousel, HeroSwiperCarousel, PeopleSayCarousel } from '../../components/carousel/Carousel'
@@ -23,8 +23,9 @@ import ambulance from "../../assets/images/ambulance.png"
 import clock from "../../assets/images/clock.png"
 import pin from "../../assets/images/pin.png"
 import call from "../../assets/images/call.png"
-import email from "../../assets/images/open.png"
+import emailImg from "../../assets/images/open.png"
 import CountUp from 'react-countup';
+import emailjs from "@emailjs/browser";
 import './home.scss';
 import Footer from '../../components/footer/Footer';
 // import { faPeopleArrows, faPeopleLine } from '@fortawesome/free-solid-svg-icons'
@@ -32,6 +33,45 @@ import Footer from '../../components/footer/Footer';
 
 
 function Home() {
+    const formRef = useRef()
+    const[name, setName] = useState('')
+    const[email, setEmail] = useState('')
+    const[phone, setPhone] = useState('')
+    const[message, setMessage] = useState('')
+    const[buttonChange, setButtonChange] = useState('Send')
+
+
+    const clearFields = (name,email,phone,message) => {
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(name && phone && message) {
+          setButtonChange("Sending...");
+          emailjs
+            .sendForm(
+              'service_7401w8w', 
+              'template_4cb0lfh', 
+              formRef.current, 
+              'b1iumduczSJfvgVdl')
+            .then((result) => {
+              setButtonChange("Send");
+              clearFields() //Clears all fields
+                  console.log(result.text);
+    
+            }, (error) => {
+                  console.log(error.text);
+            });	
+    
+        }
+        else {
+          alert (`Please make sure that "name", "phone" and "messsage" fields are filled`)
+        }
+    }   
 
   return (
     <div className='home-container'>
@@ -259,22 +299,23 @@ function Home() {
                             <p>+2349072525094</p>
                         </div>
                         <div className="email">
-                            <p><img class="reachout-icon" src={email} alt="email" /></p>
+                            <p><img class="reachout-icon" src={emailImg} alt="email" /></p>
                             <p>greyscopesurology@gmail.com</p>
                         </div>
                     </div>
                     <div className="reachOut-right">
                         <div className="msg-form">
                             <p className='msg-form-header'>Drop us a Message!</p>
-                            <form>
+                            <form onSubmit={handleSubmit} ref={formRef}>
                                 <section>
-                                        <input type="text" className="formInput" placeholder="Your name"/>
-                                        <input type="text" className="formInput" placeholder="Your email"/>
+                                        <input type="text" className="formInput" placeholder="Your name" name="user_name" value={name} onChange={(e)=>setName(e.target.value)}/>
+                                        <input type="text" className="formInput" placeholder="Your email" name="user_email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                                        <input type='phone' className="formInput" placeholder="Your phone number" name="user_phone" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
                                 </section>
                                 <section>
-                                        <textarea className="formTextArea" type="text" placeholder="Message"/>
+                                        <textarea className="formTextArea" type="text" placeholder="Message" name="user_message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
                                 </section>
-                                <button className='send-button'>Send</button>
+                                <button className='send-button'>{buttonChange}</button>
                             </form>
                         </div>
                     </div>
