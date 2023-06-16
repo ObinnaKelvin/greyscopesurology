@@ -17,6 +17,10 @@ const About = () => {
 
         <div className="about-journey">
             <div className="about-journey-wrapper">
+                    <span className="about-journey-header mobile">
+                        Our Journey
+                        <hr className='line'/>
+                    </span>
                     <div className="about-journey-left"></div>
                     <div className="about-journey-right">
                         <span className="about-journey-header">

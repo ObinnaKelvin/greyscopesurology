@@ -47,6 +47,10 @@
             display: flex;
             gap: 20px;
 
+            .about-journey-header.mobile {
+                display: none;
+            }
+
             .about-journey-left {
                 width: 50%;
                 height: 100%;
@@ -90,6 +94,49 @@
             .about-header {
                 font-size: 40px;
                 margin-left: 40px;
+            }
+        }
+
+        .about-journey {
+            width: 100%;
+            margin: 0px auto 0px auto;
+            // border: 1px solid black;
+
+            .about-journey-wrapper {
+                flex-direction: column;
+                height: max-content;
+                // border: 1px solid red;
+
+                .about-journey-header.mobile {
+                    font-size: 20px;
+                    // border: 1px solid black;
+                    display: block;
+                    margin-top: 20px;
+                    padding: 0px 10px 0px 10px;
+
+
+                    hr {
+                        margin: 10px 0px 10px 0px;
+                        width: 40px;
+                        border: 1px solid #c62828;
+                    }
+                }
+
+                .about-journey-left {
+                    height: 200px;
+                    width: 100%;
+                    background-size: cover;
+
+                }
+
+                .about-journey-right {
+                    height: max-content;
+                    width: 90%;
+                    margin: 0px auto 0px auto;
+                    .about-journey-header {
+                        display: none;
+                    }
+                }
             }
         }
     }
