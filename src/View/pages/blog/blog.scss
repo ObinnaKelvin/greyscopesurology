@@ -38,6 +38,42 @@
     .blog-nothing {
 
         .blog-wrapper {
+
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid black;
+            width: 500px;
+            padding: 20px;
+            margin: 0px auto 100px auto;
+
+            .blog-image {
+                // background-image: url('../../assets/images/nopost.png');
+                height: 350px;
+                width: 350px;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // border: 1px solid red;
+                margin: 0px auto 0px auto;
+
+                img {
+                    width: 400px;
+                    margin: 0px auto 0px auto;
+                    // border: 1px solid red;
+                }
+            }
+
+            .blog-text {
+                text-align: center;
+                p:nth-child(1) {
+                    font-size: 35px;
+                }
+                p:nth-child(2) {
+                    font-size: 20px;
+                    opacity: 0.4;
+                }
+            }
             
         }
     }
@@ -96,6 +132,49 @@
             .blog-header {
                 font-size: 40px;
                 margin-left: 40px;
+            }
+        }
+
+        .blog-nothing {
+
+            .blog-wrapper {
+    
+                // display: flex;
+                // flex-direction: column;
+                // border: 1px solid black;
+                width: 500px;
+                padding: 20px;
+                margin: 0px auto 100px auto;
+    
+                .blog-image {
+                    // background-image: url('../../assets/images/nopost.png');
+                    height: 350px;
+                    width: 350px;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // border: 1px solid red;
+                    margin: 0px auto 0px auto;
+    
+                    img {
+                        width: 400px;
+                        margin: 0px auto 0px auto;
+                        // border: 1px solid red;
+                    }
+                }
+    
+                .blog-text {
+                    text-align: center;
+                    p:nth-child(1) {
+                        font-size: 35px;
+                    }
+                    p:nth-child(2) {
+                        font-size: 20px;
+                        opacity: 0.4;
+                    }
+                }
+                
             }
         }
     }
