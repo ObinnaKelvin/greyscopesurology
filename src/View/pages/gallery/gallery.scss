@@ -20,7 +20,7 @@
         }
 
         .gallery-header {
-            max-width: 1300px;
+            max-width: 1100px;
             // border: 1px solid red;
             margin: auto auto;
             height: 100%;
@@ -34,6 +34,36 @@
             }
         }
     }
+
+    .gallery-videos {
+            max-width: 1100px;
+            margin: auto auto;
+
+            .gallery-videos-header {
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                border-left: 4px solid #c62828;
+                margin: 10px;
+            }
+    }
+
+    .gallery-pictures {
+        max-width: 1100px;
+        margin: auto auto;
+
+        .gallery-pictures-header {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            border-left: 4px solid #c62828;
+            margin: 10px;
+        }
+}
 
 
 }

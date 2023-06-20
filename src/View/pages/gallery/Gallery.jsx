@@ -14,6 +14,24 @@ const Gallery = () => {
                     <p>Gallery</p>
             </div>
         </div>
+
+        <div className="gallery-videos">
+          <div className="gallery-videos-header">
+            <p>Videos</p>
+          </div>
+          <div className="gallery-videos-wrapper">
+
+          </div>
+        </div>
+
+        <div className="gallery-pictures">
+          <div className="gallery-pictures-header">
+            <p>Pictures</p>
+          </div>
+          <div className="gallery-pictures-wrapper">
+            
+          </div>
+        </div>
       <Footer />
 
     </div>
