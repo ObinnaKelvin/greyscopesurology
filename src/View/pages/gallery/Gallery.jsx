@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './gallery.scss';
 import Navbar from '../../components/navigation/Navbar'
 import Footer from '../../components/footer/Footer';
 import play from '../../assets/images/play-button.png';
+import close from '../../assets/images/close.png';
 import vidpic1 from '../../assets/images/interview1.PNG';
 import vidpic2 from '../../assets/images/laser1.PNG';
 import vidpic3 from '../../assets/images/laser2.PNG';
+import vid1 from '../../assets/videos/laser1.mp4';
+import vid2 from '../../assets/videos/laser2.mp4';
+import vid3 from '../../assets/videos/shomoyeInterview.mp4';
 
 const Gallery = () => {
+  const[currentVideo, setCurrentVideo] = useState('')
+
+  const playVideo = (video) => {
+    setCurrentVideo(video)
+  }
+
+  const closeVideo = () => {
+    setCurrentVideo('')
+  }
+
+
+
   return (
     <div className='gallery-container'>
         <Navbar />
@@ -27,7 +43,8 @@ const Gallery = () => {
               <div className="gallery-video-item">
                   <div className="gallery-video-cover">
                     <img className='video-cover' src={vidpic1} alt="interview cover" />
-                    <div className="gallery-video-play">
+                    {/* <div className="gallery-video-play" onClick={() => playVideo(vid3)}> */}
+                  <div className="gallery-video-play" onClick={() => playVideo(vid3)}>
                       <img className='play-button' src={play} alt='play button'/>
                     </div>
                   </div>
@@ -39,7 +56,7 @@ const Gallery = () => {
               <div className="gallery-video-item">
                   <div className="gallery-video-cover">
                     <img className='video-cover' src={vidpic2} alt="interview cover" />
-                    <div className="gallery-video-play">
+                    <div className="gallery-video-play" onClick={() => playVideo(vid1)}>
                       <img className='play-button' src={play} alt='play button'/>
                     </div>
                   </div>
@@ -51,7 +68,7 @@ const Gallery = () => {
               <div className="gallery-video-item">
                   <div className="gallery-video-cover">
                     <img className='video-cover' src={vidpic3} alt="interview cover" />
-                    <div className="gallery-video-play">
+                    <div className="gallery-video-play" onClick={() => playVideo(vid2)}>
                       <img className='play-button' src={play} alt='play button'/>
                     </div>
                   </div>
@@ -60,6 +77,20 @@ const Gallery = () => {
                     <div className="gallery-video-text2">Laser Lithotripsy (Part 2)</div>
                   </div>
               </div>
+          </div>
+        </div>
+        
+        {/* <div className="video-player">
+          <video width="100%" controls autoPlay>
+            <source src={currentVideo} type='video/mp4' />
+          </video>
+        </div> */}
+        <div className={currentVideo ? `video-player-wrapper`: `video-player-wrapper inactive`} onClick={() => closeVideo()}>
+          <div className={currentVideo ? `video-player`: `video-player inactive`}>
+            <div className="close-wrapper" onClick={() => closeVideo()}>
+              <img src={close} className='close-btn'/>
+            </div>
+            <video width="100%" src={currentVideo} controls autoPlay></video>
           </div>
         </div>
 

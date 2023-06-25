@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.75f1cb62.css",
-    "main.js": "/static/js/main.828978d0.js",
+    "main.css": "/static/css/main.0a6018f1.css",
+    "main.js": "/static/js/main.6e0cde44.js",
     "static/media/bg11.jpg": "/static/media/bg11.71f4c94c2eb64f9ddd74.jpg",
     "static/media/contact1.jpg": "/static/media/contact1.5a342fb4254b428168c9.jpg",
     "static/media/peoplesay.jpg": "/static/media/peoplesay.349fe301c45016f84d89.jpg",
+    "static/media/interview1.PNG": "/static/media/interview1.a8b958275dbf1a170470.PNG",
     "static/media/microorganism.gif": "/static/media/microorganism.854fc4d45722a4850092.gif",
     "static/media/headoffice.jpg": "/static/media/headoffice.86fc2dca2f8adc2756be.jpg",
     "static/media/vasectomy.gif": "/static/media/vasectomy.00278c2d2e5a9f2c09a9.gif",
     "static/media/hosp.jpg": "/static/media/hosp.070638d57317b69e5f19.jpg",
     "static/media/bg6.jpg": "/static/media/bg6.d45b29dab860a436a9c5.jpg",
     "static/media/bg5.jpg": "/static/media/bg5.cd52e3b4d3dcc9bcd2a1.jpg",
+    "static/media/laser1.PNG": "/static/media/laser1.d3d88c02d150284e2e0b.PNG",
     "static/media/appoint.jpg": "/static/media/appoint.320de34412c6762c7716.jpg",
     "static/media/fertilization.gif": "/static/media/fertilization.df84eb0d695d4c2773a7.gif",
     "static/media/microorg.gif": "/static/media/microorg.479b159f3cf91ccf0239.gif",
     "static/media/steth.jpg": "/static/media/steth.f9ef5c80b2d3572f1dc9.jpg",
     "static/media/kidneys.gif": "/static/media/kidneys.2c1c23a6a69ed4ce4eb2.gif",
+    "static/media/laser2.PNG": "/static/media/laser2.280d05d3bcbd01b317b1.PNG",
     "static/media/testicular.gif": "/static/media/testicular.94b6ffd28f45e23392ed.gif",
     "static/media/pills.gif": "/static/media/pills.9db3afd3daac1f8bf1d4.gif",
     "static/media/dropper.gif": "/static/media/dropper.6691c21a1124f547427b.gif",
@@ -31,6 +34,7 @@
     "static/media/ambulance.png": "/static/media/ambulance.21d375b1162804d9f708.png",
     "static/media/clock.png": "/static/media/clock.55c91d17220d6478bd53.png",
     "static/media/medal.png": "/static/media/medal.6cf8be2beb57eaf82c9a.png",
+    "static/media/nopost.png": "/static/media/nopost.901f55421c3cc7432125.png",
     "static/media/greyscopes_brand_allwhite.png": "/static/media/greyscopes_brand_allwhite.3c7414bd401a124c0fe7.png",
     "static/media/instagram_wh.png": "/static/media/instagram_wh.7050f57d78bb5e95ff4b.png",
     "static/media/sketching.png": "/static/media/sketching.061b7d5c7c241875de1a.png",
@@ -48,12 +52,13 @@
     "static/media/star.png": "/static/media/star.d0cbd94e0a4a62fc2bf4.png",
     "static/media/left-quote.png": "/static/media/left-quote.dfee6124d3b6f0adaea2.png",
     "static/media/calendar.png": "/static/media/calendar.4b59ba29906c2f748e64.png",
+    "static/media/play-button.png": "/static/media/play-button.b327b00c4a8dcda6d217.png",
     "index.html": "/index.html",
-    "main.75f1cb62.css.map": "/static/css/main.75f1cb62.css.map",
-    "main.828978d0.js.map": "/static/js/main.828978d0.js.map"
+    "main.0a6018f1.css.map": "/static/css/main.0a6018f1.css.map",
+    "main.6e0cde44.js.map": "/static/js/main.6e0cde44.js.map"
   },
   "entrypoints": [
-    "static/css/main.75f1cb62.css",
-    "static/js/main.828978d0.js"
+    "static/css/main.0a6018f1.css",
+    "static/js/main.6e0cde44.js"
   ]
 }
