@@ -7,9 +7,12 @@ import close from '../../assets/images/close.png';
 import vidpic1 from '../../assets/images/interview1.PNG';
 import vidpic2 from '../../assets/images/laser1.PNG';
 import vidpic3 from '../../assets/images/laser2.PNG';
+import vidpic4 from '../../assets/images/endoscopic.PNG';
 import vid1 from '../../assets/videos/laser1.mp4';
 import vid2 from '../../assets/videos/laser2.mp4';
 import vid3 from '../../assets/videos/shomoyeInterview.mp4';
+import vid4 from '../../assets/videos/intrarenal.mp4';
+import pic1 from '../../assets/images/pic1.jpg';
 
 const Gallery = () => {
   const[currentVideo, setCurrentVideo] = useState('')
@@ -42,6 +45,18 @@ const Gallery = () => {
           <div className="gallery-videos-wrapper">
               <div className="gallery-video-item">
                   <div className="gallery-video-cover">
+                    <img className='video-cover' src={vidpic4} alt="interview cover" />
+                  <div className="gallery-video-play" onClick={() => playVideo(vid4)}>
+                      <img className='play-button' src={play} alt='play button'/>
+                    </div>
+                  </div>
+                  <div className="gallery-video-description">
+                    <div className="gallery-video-text1">Procedure</div>
+                    <div className="gallery-video-text2">Endoscopic Combined Intrarenal Surgery. The first time it was performed in Nigeria</div>
+                  </div>
+              </div>
+              <div className="gallery-video-item">
+                  <div className="gallery-video-cover">
                     <img className='video-cover' src={vidpic1} alt="interview cover" />
                     {/* <div className="gallery-video-play" onClick={() => playVideo(vid3)}> */}
                   <div className="gallery-video-play" onClick={() => playVideo(vid3)}>
@@ -50,7 +65,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-video-description">
                     <div className="gallery-video-text1">Interview</div>
-                    <div className="gallery-video-text2">Endoscopic Combined Intrarenal Surgery on Mr. Shomoye</div>
+                    <div className="gallery-video-text2">Mr. Shomoye's experience</div>
                   </div>
               </div>
               <div className="gallery-video-item">
@@ -99,7 +114,9 @@ const Gallery = () => {
             <p>Pictures</p>
           </div>
           <div className="gallery-pictures-wrapper">
-            
+            <div className="gallery-pictures-item">
+              <img src={pic1} className='pic-cover'/>
+            </div>
           </div>
         </div>
       <Footer />

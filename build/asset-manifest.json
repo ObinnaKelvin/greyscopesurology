@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a6018f1.css",
-    "main.js": "/static/js/main.6e0cde44.js",
+    "main.css": "/static/css/main.fbbc1a57.css",
+    "main.js": "/static/js/main.ceb8cfb2.js",
+    "static/media/laser2.mp4": "/static/media/laser2.2a55d64e53ce46d517b2.mp4",
     "static/media/bg11.jpg": "/static/media/bg11.71f4c94c2eb64f9ddd74.jpg",
+    "static/media/shomoyeInterview.mp4": "/static/media/shomoyeInterview.238fd07c540363ba5c0d.mp4",
     "static/media/contact1.jpg": "/static/media/contact1.5a342fb4254b428168c9.jpg",
     "static/media/peoplesay.jpg": "/static/media/peoplesay.349fe301c45016f84d89.jpg",
+    "static/media/laser1.mp4": "/static/media/laser1.86b8865872eb5b494891.mp4",
     "static/media/interview1.PNG": "/static/media/interview1.a8b958275dbf1a170470.PNG",
     "static/media/microorganism.gif": "/static/media/microorganism.854fc4d45722a4850092.gif",
     "static/media/headoffice.jpg": "/static/media/headoffice.86fc2dca2f8adc2756be.jpg",
@@ -54,11 +57,11 @@
     "static/media/calendar.png": "/static/media/calendar.4b59ba29906c2f748e64.png",
     "static/media/play-button.png": "/static/media/play-button.b327b00c4a8dcda6d217.png",
     "index.html": "/index.html",
-    "main.0a6018f1.css.map": "/static/css/main.0a6018f1.css.map",
-    "main.6e0cde44.js.map": "/static/js/main.6e0cde44.js.map"
+    "main.fbbc1a57.css.map": "/static/css/main.fbbc1a57.css.map",
+    "main.ceb8cfb2.js.map": "/static/js/main.ceb8cfb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a6018f1.css",
-    "static/js/main.6e0cde44.js"
+    "static/css/main.fbbc1a57.css",
+    "static/js/main.ceb8cfb2.js"
   ]
 }
