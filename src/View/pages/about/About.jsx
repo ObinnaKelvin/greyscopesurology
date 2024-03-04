@@ -30,7 +30,7 @@ const About = () => {
                         <br />
                         <p>
                             Greyscopes Urology was established by Dr Anyadike in 2019.
-                            His aim was to set up a modern hi-brid practice where the most advanced endourology care would be offered in the Nigeria.
+                            His aim was to set up a modern hybrid practice where the most advanced endourology care would be offered in Nigeria.
                             We partner with other specialists and have several visiting urologists who come around to share and learn with us.
                         </p>
                     </div>
