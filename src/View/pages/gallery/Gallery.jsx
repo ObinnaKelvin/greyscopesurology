@@ -13,8 +13,9 @@ import vid1 from '../../assets/videos/laser1.mp4';
 import vid2 from '../../assets/videos/laser2.mp4';
 import vid3 from '../../assets/videos/shomoyeInterview.mp4';
 import vid4 from '../../assets/videos/intrarenal.mp4';
-import vid5 from '../../assets/videos/stones.mp4';
+// import vid5 from '../../assets/videos/stones.mp4';
 import pic1 from '../../assets/images/pic1.jpg';
+const vid5 = 'https://firebasestorage.googleapis.com/v0/b/sapphire-15128.appspot.com/o/videos%2Fstones.mp4?alt=media&token=5244f1b0-8c7f-41ed-9d1f-50a4c5022b7d'
 
 const Gallery = () => {
   const[currentVideo, setCurrentVideo] = useState('')
