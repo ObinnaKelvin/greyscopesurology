@@ -8,10 +8,12 @@ import vidpic1 from '../../assets/images/interview1.PNG';
 import vidpic2 from '../../assets/images/laser1.PNG';
 import vidpic3 from '../../assets/images/laser2.PNG';
 import vidpic4 from '../../assets/images/endoscopic.PNG';
+import vidpic5 from '../../assets/images/kidneystones.PNG';
 import vid1 from '../../assets/videos/laser1.mp4';
 import vid2 from '../../assets/videos/laser2.mp4';
 import vid3 from '../../assets/videos/shomoyeInterview.mp4';
 import vid4 from '../../assets/videos/intrarenal.mp4';
+import vid5 from '../../assets/videos/stones.mp4';
 import pic1 from '../../assets/images/pic1.jpg';
 
 const Gallery = () => {
@@ -45,6 +47,18 @@ const Gallery = () => {
           <div className="gallery-videos-wrapper">
               <div className="gallery-video-item">
                   <div className="gallery-video-cover">
+                    <img className='video-cover' src={vidpic5} alt="interview cover" />
+                  <div className="gallery-video-play" onClick={() => playVideo(vid5)}>
+                      <img className='play-button' src={play} alt='play button'/>
+                    </div>
+                  </div>
+                  <div className="gallery-video-description">
+                    <div className="gallery-video-text1">Procedure</div>
+                    <div className="gallery-video-text2">Removal of huge stones in the kidney with laser through a very tiny incision.</div>
+                  </div>
+              </div>
+              <div className="gallery-video-item">
+                  <div className="gallery-video-cover">
                     <img className='video-cover' src={vidpic4} alt="interview cover" />
                   <div className="gallery-video-play" onClick={() => playVideo(vid4)}>
                       <img className='play-button' src={play} alt='play button'/>
@@ -52,7 +66,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-video-description">
                     <div className="gallery-video-text1">Procedure</div>
-                    <div className="gallery-video-text2">Endoscopic Combined Intrarenal Surgery. The first time it was performed in Nigeria</div>
+                    <div className="gallery-video-text2">Endoscopic Combined Intrarenal Surgery. The first time it was performed in Nigeria.</div>
                   </div>
               </div>
               <div className="gallery-video-item">

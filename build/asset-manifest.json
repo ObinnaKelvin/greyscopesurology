@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbbc1a57.css",
-    "main.js": "/static/js/main.ceb8cfb2.js",
+    "main.css": "/static/css/main.192d249e.css",
+    "main.js": "/static/js/main.014ae434.js",
+    "static/media/intrarenal.mp4": "/static/media/intrarenal.197b64718da12e8a3779.mp4",
     "static/media/laser2.mp4": "/static/media/laser2.2a55d64e53ce46d517b2.mp4",
     "static/media/bg11.jpg": "/static/media/bg11.71f4c94c2eb64f9ddd74.jpg",
     "static/media/shomoyeInterview.mp4": "/static/media/shomoyeInterview.238fd07c540363ba5c0d.mp4",
@@ -17,6 +18,7 @@
     "static/media/bg5.jpg": "/static/media/bg5.cd52e3b4d3dcc9bcd2a1.jpg",
     "static/media/laser1.PNG": "/static/media/laser1.d3d88c02d150284e2e0b.PNG",
     "static/media/appoint.jpg": "/static/media/appoint.320de34412c6762c7716.jpg",
+    "static/media/endoscopic.PNG": "/static/media/endoscopic.097de76e82e9e72f61ee.PNG",
     "static/media/fertilization.gif": "/static/media/fertilization.df84eb0d695d4c2773a7.gif",
     "static/media/microorg.gif": "/static/media/microorg.479b159f3cf91ccf0239.gif",
     "static/media/steth.jpg": "/static/media/steth.f9ef5c80b2d3572f1dc9.jpg",
@@ -28,6 +30,7 @@
     "static/media/thermometer.gif": "/static/media/thermometer.b8b523dcd66b8d5faa69.gif",
     "static/media/microscope.gif": "/static/media/microscope.9ee0243ff68ecdb2d02e.gif",
     "static/media/tube.gif": "/static/media/tube.b3bde4050c728f04591b.gif",
+    "static/media/pic1.jpg": "/static/media/pic1.811bcd687734293a678b.jpg",
     "static/media/bg9.jpg": "/static/media/bg9.f47592ee4a2a2b8359da.jpg",
     "static/media/laser.gif": "/static/media/laser.87fbf9222266901477e6.gif",
     "static/media/success.jpg": "/static/media/success.c07a70834792af952a8d.jpg",
@@ -57,11 +60,11 @@
     "static/media/calendar.png": "/static/media/calendar.4b59ba29906c2f748e64.png",
     "static/media/play-button.png": "/static/media/play-button.b327b00c4a8dcda6d217.png",
     "index.html": "/index.html",
-    "main.fbbc1a57.css.map": "/static/css/main.fbbc1a57.css.map",
-    "main.ceb8cfb2.js.map": "/static/js/main.ceb8cfb2.js.map"
+    "main.192d249e.css.map": "/static/css/main.192d249e.css.map",
+    "main.014ae434.js.map": "/static/js/main.014ae434.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbbc1a57.css",
-    "static/js/main.ceb8cfb2.js"
+    "static/css/main.192d249e.css",
+    "static/js/main.014ae434.js"
   ]
 }
