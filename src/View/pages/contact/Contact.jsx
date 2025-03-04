@@ -14,6 +14,20 @@ const Contact = () => {
                     <p>Contact Us</p>
             </div>
         </div>
+
+        <div className="contact-body">
+            {/* <div className='contact-wrapper'>
+              Hi Hi
+              <div className="contact-items-group">
+
+              </div>
+
+              <div className="contact-map">
+
+              </div>
+
+            </div> */}
+        </div>
         
         <Footer />
     </div>

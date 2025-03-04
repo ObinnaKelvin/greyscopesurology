@@ -49,7 +49,7 @@ const Gallery = () => {
               <div className="gallery-video-item">
                   <div className="gallery-video-cover">
                     <img className='video-cover' src={vidpic5} alt="interview cover" />
-                  <div className="gallery-video-play" onClick={() => playVideo(vid5)}>
+                    <div className="gallery-video-play" onClick={() => playVideo(vid5)}>
                       <img className='play-button' src={play} alt='play button'/>
                     </div>
                   </div>

@@ -292,7 +292,7 @@ function Home() {
                         </div>
                         <div className="location">
                             <p><img class="reachout-icon" src={pin} alt="location" /></p>
-                            <p>9B Idejo street, Victoria Island Lagos.</p>
+                            <p>16 Water Corporation drive, Victoria Island Lagos.</p>
                         </div>
                         <div className="phone">
                             <p><img class="reachout-icon" src={call} alt="phone" /></p>

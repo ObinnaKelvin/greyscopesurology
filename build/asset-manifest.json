@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.192d249e.css",
-    "main.js": "/static/js/main.014ae434.js",
+    "main.js": "/static/js/main.1f35701e.js",
     "static/media/intrarenal.mp4": "/static/media/intrarenal.197b64718da12e8a3779.mp4",
     "static/media/laser2.mp4": "/static/media/laser2.2a55d64e53ce46d517b2.mp4",
     "static/media/bg11.jpg": "/static/media/bg11.71f4c94c2eb64f9ddd74.jpg",
@@ -29,6 +29,7 @@
     "static/media/dropper.gif": "/static/media/dropper.6691c21a1124f547427b.gif",
     "static/media/thermometer.gif": "/static/media/thermometer.b8b523dcd66b8d5faa69.gif",
     "static/media/microscope.gif": "/static/media/microscope.9ee0243ff68ecdb2d02e.gif",
+    "static/media/kidneystones.PNG": "/static/media/kidneystones.79be7bc4f049d1163bfe.PNG",
     "static/media/tube.gif": "/static/media/tube.b3bde4050c728f04591b.gif",
     "static/media/pic1.jpg": "/static/media/pic1.811bcd687734293a678b.jpg",
     "static/media/bg9.jpg": "/static/media/bg9.f47592ee4a2a2b8359da.jpg",
@@ -61,10 +62,10 @@
     "static/media/play-button.png": "/static/media/play-button.b327b00c4a8dcda6d217.png",
     "index.html": "/index.html",
     "main.192d249e.css.map": "/static/css/main.192d249e.css.map",
-    "main.014ae434.js.map": "/static/js/main.014ae434.js.map"
+    "main.1f35701e.js.map": "/static/js/main.1f35701e.js.map"
   },
   "entrypoints": [
     "static/css/main.192d249e.css",
-    "static/js/main.014ae434.js"
+    "static/js/main.1f35701e.js"
   ]
 }
