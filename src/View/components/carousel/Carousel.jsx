@@ -203,6 +203,59 @@ export const PeopleSayCarousel = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
+                        <div className='peopleSay-wrapper'>
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                Dear Dr Hamzat, 
+                                Exactly today, in 2024 made it a year that Dr Anyadike, you and the experts of GreyScopes Urology, 
+                                crafted off the right kidney along with a tumor that could have slowly killed me.
+                                God used you to save my life that day and I am thankful.
+                                I'm still healing and I'm still thankful.
+                                Thank you, Dr Hamzat. Thank you 🙏
+.
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Anonymous</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(5).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='peopleSay-card'>
+                        <div className='peopleSay-mark'>
+                            <img src={quote} alt="Quotation mark"/>
+                        </div>
+                        <div className='peopleSay-wrapper'>
+                            <div className='peopleSay-comment'>
+                                {/* <p> */}
+                                It's been one year today, that God Almighty guided your gifted hands to craft off the right kidney along with a tumor that could have slowly killed me.
+                                It's been one year of daily mercy and healing for me.
+                                I want to thank you, Dr Anyadike for being the vessel God Almighty used to save my life.
+                                Thank you to you, and your beautiful team. Thank you 🙏
+                                {/* </p> */}
+                            </div>
+                            <div className='peopleSay-user'> — Joy Ufem</div>
+                            <div className='peopleSay-rating'>
+                                {
+                                    Array(5).fill(0).map((item, index) => 
+                                        <img src={star} alt="Star rating" />
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
 
             </Swiper>
         </>
